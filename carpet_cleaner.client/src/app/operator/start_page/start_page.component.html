@@ -1,0 +1,22 @@
+<nb-card>
+  <nb-card-body>
+    <div class="row justify-content-start">
+      <div class="col-sm-1 search-container">
+        <nb-search size="large" type="column-curtain" placeholder="{{'phoneNumber'|translate}}" hint="{{'searchByPhoneNumber'|translate}}">
+        </nb-search>
+      </div>
+      <div class="col-sm-2">
+        <button nbButton hero status="primary" (click)="addNewOrder()">{{'addNewOrder'|translate}}</button>
+      </div>
+    </div>
+    <nb-list>
+      <nb-list-item class="item" *ngFor="let item of source">
+        <span>
+          <span class="tap-button" (click)="addNewOrder(item.id)">
+            <nb-user shape="rectangle" name="{{item.fio}}" title="{{item.phoneNumber}}"></nb-user>
+          </span>
+        </span>
+      </nb-list-item >
+    </nb-list>
+  </nb-card-body>
+</nb-card>

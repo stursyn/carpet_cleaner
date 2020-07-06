@@ -1,0 +1,193 @@
+<nb-card>
+  <nb-card-header>
+    {{'orders'| translate}}
+  </nb-card-header>
+
+  <nb-card-body>
+    <nb-card accent="info">
+      <nb-card-header>{{'customer'|translate}}</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputSurname" class="label">{{'surname'|translate}}</label>
+              <input type="text" nbInput fullWidth id="inputSurname" [(ngModel)]="customer.surname"
+                     placeholder="{{'surname'|translate}}">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputName" class="label">{{'name'| translate}}</label>
+              <input type="text" nbInput fullWidth id="inputName" [(ngModel)]="customer.name"
+                     placeholder="{{'name'| translate}}">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputPatronymic" class="label">{{'patronymic'| translate}}</label>
+              <input type="text" nbInput fullWidth id="inputPatronymic" [(ngModel)]="customer.patronymic"
+                     placeholder="{{'patronymic'| translate}}">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputPhoneNumber" class="label">{{'phoneNumber'|translate}}</label>
+              <input type="text" nbInput fullWidth id="inputPhoneNumber" [(ngModel)]="customer.phoneNumber"
+                     placeholder="{{'phoneNumber'|translate}}">
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card accent="info">
+      <nb-card-header>{{'order'|translate}}</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label for="labelOrderNumber" class="label">{{'orderNumber'|translate}}</label>
+              <label id="labelOrderNumber">{{order.number}}</label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="inputPickUpDate" class="label">{{'pickUpDate'|translate}}</label>
+              <input nbInput id="inputPickUpDate" fullWidth [nbDatepicker]="datepicker"
+                     [(ngModel)]="order.pickUpDate"
+                     placeholder="01.01.2020">
+              <nb-datepicker #datepicker format="dd.MM.yyyy"></nb-datepicker>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="mapPickUpAddress" class="label">{{'pickUpAddress'|translate}}</label>
+          <div class="map" id="mapPickUpAddress">
+            <angular-yandex-map [center]="[55.751952, 37.600739]">
+              <angular-yandex-placemark [geometry]="[55.751952, 37.600739]"></angular-yandex-placemark>
+            </angular-yandex-map>
+          </div>
+        </div>
+        <div class="row">
+          <nb-card class="merchant-card-container" accent="info">
+            <nb-card-header>{{'merchants'|translate}}</nb-card-header>
+            <nb-card-body>
+              <button nbButton hero status="primary" (click)="addNewMerchant()">{{'addNewMerchant'|translate}}</button>
+              <nb-list>
+                <nb-list-item class="item" *ngFor="let item of merchantList, let i = index">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-sm-10">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="selectMerchantService" class="label">{{'merchantService'|translate}}</label>
+                              <nb-select id="selectMerchantService"
+                                         fullWidth
+                                         placeholder="{{'merchantService'|translate}}"
+                                         [(ngModel)]="item.merchantService">
+                                <nb-option
+                                  *ngFor="let option of merchantServiceOption"
+                                  [value]="option.value">
+                                  {{option.title}}
+                                </nb-option>
+                              </nb-select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="selectMerchantType" class="label">{{'merchantType'|translate}}</label>
+                              <nb-select id="selectMerchantType"
+                                         fullWidth
+                                         placeholder="{{'merchantType'|translate}}"
+                                         [(ngModel)]="item.merchantType">
+                                <nb-option
+                                  *ngFor="let option of merchantTypeOption"
+                                  [value]="option.value">
+                                  {{option.title}}
+                                </nb-option>
+                              </nb-select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="selectMerchantMaterial" class="label">{{'merchantMaterial'|translate}}</label>
+                              <nb-select id="selectMerchantMaterial"
+                                         fullWidth
+                                         placeholder="{{'merchantMaterial'|translate}}"
+                                         [(ngModel)]="item.merchantMaterial">
+                                <nb-option
+                                  *ngFor="let option of merchantMaterialOption"
+                                  [value]="option.value">
+                                  {{option.title}}
+                                </nb-option>
+                              </nb-select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="selectMerchantCount" class="label">{{'merchantCount'|translate}}</label>
+                              <nb-select id="selectMerchantCount"
+                                         fullWidth
+                                         placeholder="{{'merchantCount'|translate}}"
+                                         [(ngModel)]="item.merchantCount">
+                                <nb-option
+                                  *ngFor="let option of merchantCountOption"
+                                  [value]="option.value">
+                                  {{option.title}}
+                                </nb-option>
+                              </nb-select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="selectMerchantMeasurement" class="label">{{'merchantMeasurement'|translate}}</label>
+                              <nb-select id="selectMerchantMeasurement"
+                                         fullWidth
+                                         placeholder="{{'merchantMeasurement'|translate}}"
+                                         [(ngModel)]="item.merchantMeasurement">
+                                <nb-option
+                                  *ngFor="let option of merchantMeasurementOption"
+                                  [value]="option.value">
+                                  {{option.title}}
+                                </nb-option>
+                              </nb-select>
+                            </div>
+                          </div>
+                        </div>
+                        <div *ngIf="item.merchantMeasurement == 'size'" class="row justify-content-end">
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="inputMerchantWidth" class="label">{{'merchantWidth'|translate}}</label>
+                              <input type="text" nbInput fullWidth id="inputMerchantWidth" [(ngModel)]="item.merchantWidth"
+                                     placeholder="{{'merchantWidth'|translate}}">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="inputMerchantHeight" class="label">{{'merchantHeight'|translate}}</label>
+                              <input type="text" nbInput fullWidth id="inputMerchantHeight" [(ngModel)]="item.merchantHeight"
+                                     placeholder="{{'merchantHeight'|translate}}">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 item-remove-button">
+                        <span class="tap-button" (click)="deleteMerchant(i)"><i class="nb-close"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </nb-list-item>
+              </nb-list>
+            </nb-card-body>
+          </nb-card>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </nb-card-body>
+</nb-card>

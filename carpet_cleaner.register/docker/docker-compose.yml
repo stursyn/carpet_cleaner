@@ -13,11 +13,17 @@ services:
       - ./postgres-init:/docker-entrypoint-initdb.d
 
   keycloak:
-    image: jboss/keycloak
-    container_name: carpet_cleaner_keycloak
-    restart: always
-    ports:
-      - "18080:8080"
+    image: quay.io/keycloak/keycloak:latest
     environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: carpet_cleaner_keycloak
+      DB_USER: carpet_cleaner_keycloak
+      DB_SCHEMA: public
+      DB_PASSWORD: 111
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
+    ports:
+      - 18080:8080
+    depends_on:
+      - postgres

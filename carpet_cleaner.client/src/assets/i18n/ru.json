@@ -9,5 +9,21 @@
   "thanksForResponse": "Благодарим за отзыв!",
   "unsatisfied": "Плохо",
   "neutral": "Средне",
-  "satisfied": "Хорошо"
+  "satisfied": "Хорошо",
+  "customer": "Клиент",
+  "surname": "Фамилия",
+  "name": "Имя",
+  "patronymic": "Отчество",
+  "phoneNumber": "Номер телефона",
+  "order": "Заказ",
+  "orderNumber": "Номер заказа",
+  "pickUpDate": "Дата вывоза товара",
+  "pickUpAddress": "Адрес вывоза товара",
+  "merchants": "Товары",
+  "addNewMerchant": "Добавить новый товар",
+  "merchantService": "Услуга ИС",
+  "merchantType": "Тип товара",
+  "merchantMaterial": "Материал",
+  "merchantCount": "Количество",
+  "merchantMeasurement": "Единицы измерения"
 }

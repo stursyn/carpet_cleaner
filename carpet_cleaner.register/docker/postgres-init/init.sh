@@ -14,4 +14,8 @@ psql -v ON_ERROR_STOP=1 --username postgres --dbname postgres <<-EOSQL
     CREATE DATABASE carpet_cleaner WITH OWNER carpet_cleaner;
     GRANT ALL ON DATABASE carpet_cleaner TO carpet_cleaner;
 
+    CREATE USER carpet_cleaner_keycloak WITH ENCRYPTED PASSWORD '111';
+    CREATE DATABASE carpet_cleaner_keycloak WITH OWNER carpet_cleaner;
+    GRANT ALL ON DATABASE carpet_cleaner_keycloak TO carpet_cleaner_keycloak;
+
 EOSQL
