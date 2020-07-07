@@ -6,11 +6,7 @@ import java.util.List;
 
 public interface OrderRegister {
 
-  List<OrderRecord> getOrderList();
+  void saveOrder(String customerId, OrderRecord order);
 
-  void deleteOrder(String orderId);
-
-  OrderRecord upsertOrder(OrderRecord toSave);
-
-  OrderRecord getOrderDetail(String orderId);
+  String getNextOrderNumber();
 }

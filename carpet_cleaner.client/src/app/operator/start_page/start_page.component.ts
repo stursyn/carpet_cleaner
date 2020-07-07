@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CustomerRecord} from "../model/CustomerRecord";
 import {CustomerService} from "../../services/customer.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {error} from "selenium-webdriver";
+import {NbSearchService} from "@nebular/theme";
 
 @Component({
   selector: 'app-start-page',
@@ -11,24 +11,42 @@ import {error} from "selenium-webdriver";
 })
 export class StartPageComponent implements OnInit {
 
-  phoneNUmber:string;
+  phoneNumber:string;
   source: CustomerRecord[];
+  showClientNotFound:boolean = false;
 
   constructor(private customerService: CustomerService,
+              private nbSearchService: NbSearchService,
               private router:Router,
               private route:ActivatedRoute) {
-    this.customerService.getPhoneNumber.subscribe(phoneNumber=> {
-      this.loadData(phoneNumber)
-    })
+    this.nbSearchService.onSearchActivate()
+      .subscribe(value => {
+        this.source = [];
+        this.showClientNotFound = false;
+      });
+
+    this.nbSearchService.onSearchSubmit()
+      .subscribe( (filter:any) => {
+         this.loadData(filter)
+      });
   }
 
-  loadData(phoneNumber:string) {
+  loadData(phoneNumber:any) {
     if(phoneNumber) {
-      this.phoneNUmber = phoneNumber;
+      this.phoneNumber = phoneNumber.term;
       this.customerService
-        .searchByPhoneNumber(phoneNumber).then(res => {
+        .searchByPhoneNumber(this.phoneNumber).then(res => {
         this.source = res;
+        if(this.source.length == 0) {
+          this.showClientNotFound = true;
+        } else {
+          this.showClientNotFound = false;
+        }
+      }, error => {
+          this.showClientNotFound = true;
       });
+    } else {
+      this.showClientNotFound = true;
     }
   }
 
@@ -36,9 +54,8 @@ export class StartPageComponent implements OnInit {
   }
 
   addNewOrder(id: string = null) {
-    console.log(this.route);
     this.router.navigate(['createOrder'], {relativeTo: this.route.parent, queryParams: { customerId: id}})
       .then(nav => console.log(nav),
-        error => console.log(error));
+        error => {console.log(error)});
   }
 }

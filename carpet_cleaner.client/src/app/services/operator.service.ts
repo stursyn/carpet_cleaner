@@ -11,10 +11,9 @@ export class OperatorService {
 
   }
 
-  findClientByPhoneNumber(phoneNumber:string) {
-    let endPoint = this.apiPoint + "/searchCustomerByPhone" ;
-    return this.api.get(endPoint, phoneNumber)
-      .toPromise()
+  saveOrder(toSave: any) {
+    let endPoint = this.apiPoint + "/saveOrder";
+    return this.api.post(endPoint,toSave).toPromise()
       .then(res=>res);
   }
 }

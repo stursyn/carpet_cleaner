@@ -1,10 +1,5 @@
 <div class="map">
-  <a>text</a>
-  <angular-yandex-map [center]="[55.751952, 37.600739]" [zoom]="8">
-    <angular-yandex-placemark
-        [geometry]="[55.751952, 37.600739]"
-        [properties]="placemarkProperties"
-        [options]="placemarkOptions"
-    ></angular-yandex-placemark>
+  <angular-yandex-map [center]="[47.9011,67.5461]" [zoom]="15">
+    <angular-yandex-multiroute [referencePoints]="[[47.901122, 67.546122], [47.801122, 67.446122], [47.701122, 67.346122]]"></angular-yandex-multiroute>
   </angular-yandex-map>
 </div>

@@ -1,6 +1,6 @@
 <nb-card>
   <nb-card-header>
-    {{'orders'| translate}}
+    {{'newOrder'| translate}}
   </nb-card-header>
 
   <nb-card-body>
@@ -50,7 +50,7 @@
           <div class="col-sm-2">
             <div class="form-group">
               <label for="labelOrderNumber" class="label">{{'orderNumber'|translate}}</label>
-              <label id="labelOrderNumber">{{order.number}}</label>
+              <label class="w-100" id="labelOrderNumber">{{order.number}}</label>
             </div>
           </div>
           <div class="col-sm-4">
@@ -66,8 +66,13 @@
         <div class="row">
           <label for="mapPickUpAddress" class="label">{{'pickUpAddress'|translate}}</label>
           <div class="map" id="mapPickUpAddress">
-            <angular-yandex-map [center]="[55.751952, 37.600739]">
-              <angular-yandex-placemark [geometry]="[55.751952, 37.600739]"></angular-yandex-placemark>
+            <angular-yandex-map [center]="[51.128207, 71.430411 ]" [zoom]="15"
+                                [state]="{ controls: ['zoomControl'] }">
+              <angular-yandex-control [type]="'SearchControl'"
+                                      [parameters]="searchParameters"
+                                      (load)="onSearchAddressControlLoad($event)">
+
+              </angular-yandex-control>
             </angular-yandex-map>
           </div>
         </div>
@@ -160,7 +165,7 @@
                             </div>
                           </div>
                         </div>
-                        <div *ngIf="item.merchantMeasurement == 'size'" class="row justify-content-end">
+                        <div *ngIf="item.merchantMeasurement == 'measurement2'" class="row justify-content-end">
                           <div class="col-sm-4">
                             <div class="form-group">
                               <label for="inputMerchantWidth" class="label">{{'merchantWidth'|translate}}</label>
@@ -190,4 +195,14 @@
       </nb-card-body>
     </nb-card>
   </nb-card-body>
+  <nb-card-footer>
+    <div class="row justify-content-center">
+      <div class="col-sm-2">
+        <button nbButton size="medium" fullWidth outline status="basic" shape="semi-round" (click)="cancel()">{{'cancel'|translate}}</button>
+      </div>
+      <div class="col-sm-2">
+        <button nbButton size="medium" fullWidth outline status="success" shape="semi-round" (click)="save()">{{'save'|translate}}</button>
+      </div>
+    </div>
+  </nb-card-footer>
 </nb-card>

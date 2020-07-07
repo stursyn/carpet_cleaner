@@ -10,19 +10,11 @@ import java.util.List;
 
 public interface OrderDao {
 
-  @Select("select * from cleaner_order")
-  List<OrderRecord> getList();
+  @Select("SELECT nextval('s_order_number')")
+  long loadSeqOrderNumber();
 
-  @Delete("delete from cleaner_order where id = #{orderId}")
-  void deleteOrder(@Param("orderId") String orderId);
-
-  @Insert("insert into cleaner_order(id, name, surname, phoneNumber, email) " +
-      " values (#{toSave.id}, #{toSave.name}, #{toSave.surname}, #{toSave.phoneNumber}, #{toSave.email})" +
-      " on conflict (id) do update " +
-      " set id = #{toSave.id}, name = #{toSave.name}, surname = #{toSave.surname}, phoneNumber = #{toSave.phoneNumber}," +
-      " email = #{toSave.email}")
+  @Insert("insert into clean_order(id, customerId, pickUpAddress, deliveryAddress, pickUpDate, deliveryDate, cleanStatus, totalOrderPrice) " +
+      " values (#{toSave.id}, #{toSave.customerId}, #{toSave.pickUpAddress.id}, #{toSave.pickUpAddress.id}, #{toSave.pickUpDate}, #{toSave.deliveryDate}, #{toSave.cleanStatus}, #{toSave.totalOrderPrice})" +
+      " on conflict (id) do nothing")
   void saveOrder(@Param("toSave") OrderRecord toSave);
-
-  @Select("select * from cleaner_order where id = #{orderId}")
-  OrderRecord getOrderDetail(@Param("orderId") String orderId);
 }

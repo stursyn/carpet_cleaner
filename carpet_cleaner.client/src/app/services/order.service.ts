@@ -34,4 +34,10 @@ export class OrderService {
     return this.api.post(endPoint, data).toPromise()
       .then( res=>res);
   }
+
+  orderNumber() {
+    let endPoint = this.apiPoint + "/nextNumber";
+    return this.api.get(endPoint).toPromise()
+      .then( res=>res);
+  }
 }

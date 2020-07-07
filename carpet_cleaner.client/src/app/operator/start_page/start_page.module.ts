@@ -4,7 +4,7 @@ import {
   NbCardModule,
   NbIconModule,
   NbInputModule,
-  NbListModule, NbSearchModule
+  NbListModule, NbSearchModule, NbUserModule
 } from '@nebular/theme';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
@@ -23,6 +23,7 @@ import {FormsModule} from "@angular/forms";
     NbButtonModule,
     NbInputModule,
     NbSearchModule,
+    NbUserModule,
     ThemeModule,
     Ng2SmartTableModule,
   ],

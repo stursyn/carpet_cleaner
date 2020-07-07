@@ -16,6 +16,7 @@
       create table customer_address (
         id varchar(100) not null primary key,
         customerId varchar(100) references customer(id),
+        displayAddress varchar(2000),
         longitude numeric,
         latitude numeric
       );;
@@ -23,12 +24,13 @@
       create table clean_order (
         id varchar(100) not null primary key,
         customerId varchar(100) references customer(id),
+        number varchar(30),
         pickUpAddress varchar(100) references customer_address(id),
         deliveryAddress varchar(100) references customer_address(id),
         pickUpDate timestamp,
-        deliveryAddress timestamp,
+        deliveryDate timestamp,
         cleanStatus varchar(30),
-        totalOrderPrice number
+        totalOrderPrice numeric
       );;
 
       create table application_dict (
@@ -45,17 +47,38 @@
 
       create table clean_service (
         id varchar(100) not null primary key,
-        cleanOrder varchar(100) references clean_order(id),
-        merchantCount int,
+        cleanOrderId varchar(100) references clean_order(id),
+        merchantCount varchar(100) references application_dict(code),
         merchantType varchar(100) references application_dict(code),
         merchantMaterial varchar(100) references application_dict(code),
         merchantMeasurement varchar(100) references application_dict(code),
         serviceType varchar(100) references application_dict(code),
-        servicePrice number
+        servicePrice numeric
       );;
 
-       
+      create sequence s_order_number increment by 1 start 1;;
     ]]></sql>
   </changeSet>
 
+  <changeSet author="stursyn" id="fill_dictionary">
+    <sql endDelimiter=";;"><![CDATA[
+      insert into application_dict(code, title, dictType)
+      values
+        ('count1', '1', 'MERCHANT_COUNT'),
+        ('count2', '2', 'MERCHANT_COUNT'),
+        ('count3', '3', 'MERCHANT_COUNT'),
+        ('count4', '4', 'MERCHANT_COUNT'),
+        ('count5', '5', 'MERCHANT_COUNT'),
+        ('service1', 'Стирка', 'MERCHANT_SERVICE'),
+        ('service2', 'Химчистка', 'MERCHANT_SERVICE'),
+        ('type1', 'Ковер', 'MERCHANT_TYPE'),
+        ('type2', 'Покрывало', 'MERCHANT_TYPE'),
+        ('type3', 'Коврик', 'MERCHANT_TYPE'),
+        ('material1', 'Шерсть', 'MERCHANT_MATERIAL'),
+        ('material2', 'Синтетика', 'MERCHANT_MATERIAL'),
+        ('measurement1', 'шт', 'MERCHANT_MEASUREMENT'),
+        ('measurement2', 'Размер', 'MERCHANT_MEASUREMENT');;
+
+    ]]></sql>
+  </changeSet>
 </databaseChangeLog>

@@ -11,12 +11,14 @@
     </div>
     <nb-list>
       <nb-list-item class="item" *ngFor="let item of source">
-        <span>
-          <span class="tap-button" (click)="addNewOrder(item.id)">
+        <span class="user-span" (click)="addNewOrder(item.id)">
             <nb-user shape="rectangle" name="{{item.fio}}" title="{{item.phoneNumber}}"></nb-user>
-          </span>
         </span>
-      </nb-list-item >
+
+      </nb-list-item>
+      <nb-list-item fullWidth class="item client-not-found" *ngIf="showClientNotFound">
+        <a>{{"clientNotFound"|translate}}</a>
+      </nb-list-item>
     </nb-list>
   </nb-card-body>
 </nb-card>

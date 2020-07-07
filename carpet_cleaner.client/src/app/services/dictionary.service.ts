@@ -13,7 +13,7 @@ export class DictionaryService {
 
   loadDictionary(dictType:string) {
     let endPoint = this.apiPoint + "/list" ;
-    return this.api.get(endPoint, dictType)
+    return this.api.get(endPoint, {dictType:dictType})
       .toPromise()
       .then(res=>res);
   }

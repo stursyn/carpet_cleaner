@@ -25,5 +25,11 @@
   "merchantType": "Тип товара",
   "merchantMaterial": "Материал",
   "merchantCount": "Количество",
-  "merchantMeasurement": "Единицы измерения"
+  "merchantMeasurement": "Единицы измерения",
+  "addNewOrder": "Добавить новый заказ",
+  "searchByPhoneNumber": "Поиск клиента по номеру телефона",
+  "newOrder": "Новый заказ",
+  "clientNotFound": "Клиент не найден",
+  "merchantWidth": "Ширина",
+  "merchantHeight": "Высота"
 }
