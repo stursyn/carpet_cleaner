@@ -1,7 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46cf8b17-77c0-4b76-9a3c-5d6c728b3bc2" name="Default Changelist" comment="" />
+    <list default="true" id="46cf8b17-77c0-4b76-9a3c-5d6c728b3bc2" name="Default Changelist" comment="order modal window for add order">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_mobile_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_mobile_war__exploded_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.mobile/kz.nu.carpet_cleaner.carpet_cleaner.mobile.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.mobile/kz.nu.carpet_cleaner.carpet_cleaner.mobile.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.mobile/kz.nu.carpet_cleaner.carpet_cleaner.mobile.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderShortRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/ServerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/implementations/api/apiProd.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRouteWay.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/providers/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/providers/guards/permission.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/providers/interceptors/error.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/providers/interceptors/jwt.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/api.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/dictionary.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/interval.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/session.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___api_null_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___api_null_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_client_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_client_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_controller_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_controller_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/CustomerRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/CustomerRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/explore-container/explore-container.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/explore-container/explore-container.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/explore-container/explore-container.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/explore-container/explore-container.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/explore-container/explore-container.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab1/tab1-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab1/tab1.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab1/tab1.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab1/tab1.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab1/tab1.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab1/tab1.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab2/tab2-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab2/tab2.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab2/tab2.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab2/tab2.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-page.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab2/tab2.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab2/tab2.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab3/tab3-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab3/tab3.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab3/tab3.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab3/tab3.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab3/tab3.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tab3/tab3.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tabs/tabs-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tabs/tabs.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tabs/tabs.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tabs/tabs.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/tabs/tabs.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -11,11 +98,65 @@
     <ignored path="$PROJECT_DIR$/carpet_cleaner.controller/build/" />
     <ignored path="$PROJECT_DIR$/carpet_cleaner.register/.gradle/" />
     <ignored path="$PROJECT_DIR$/carpet_cleaner.register/build/" />
+    <ignored path="$PROJECT_DIR$/carpet_cleaner.mobile/.gradle/" />
+    <ignored path="$PROJECT_DIR$/carpet_cleaner.mobile/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="carpet_cleaner: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="carpet_cleaner: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="carpet_cleaner: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <expanded>
+      <node key="fcb0292d-3078-4040-bb9b-c730552b199c">
+        <node key="carpet_cleaner" />
+      </node>
+    </expanded>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -25,100 +166,238 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="carpet_cleaner" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="carpet_cleaner" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/ApiError.java">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-page.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="24" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="69" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="TypeScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>e</find>
       <find>greetgoUtilVersion</find>
+      <find>greetgo.service_bus</find>
+      <find>&lt;nb-list-item</find>
+      <find>&lt;nb-list-item class=&quot;item&quot;</find>
+      <find>item</find>
+      <find>data</find>
+      <find>ap</find>
+      <find>redirectTo</find>
+      <find>nb-global-spinner</find>
+      <find>spinner</find>
+      <find>nb-install-component</find>
+      <find>redirectTo:</find>
+      <find>label</find>
+      <find>navigate</find>
+      <find>meas</find>
+      <find>ion-avatar</find>
+      <find>loadOrderByStatus</find>
+      <find>&quot; +</find>
+      <find>let item</find>
+      <find>routeList</find>
+      <find>&quot; +</find>
     </findStrings>
+    <replaceStrings>
+      <replace>nu.carpet_cleaner</replace>
+      <replace>customer</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/AppFolderPath.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/ExceptionUtils.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/StringBooleanDeserializer.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/ApiError.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/Response.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/RestSecurityMessage.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/liquibase/DbParams.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/liquibase/PostgresLiquibase.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/SwaggerAuthenticationProvider.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/AllConfigFactory.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/AppBeanScanner.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/MyBatisConfiguration.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/OkHttpClientConfiguration.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/TaskExecutorConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/TwilioSmsSendController.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/WebConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/AixPostDao.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/EmailSenderConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/DbConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/mapper/PostMapper.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/Post.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/BeanScannerRegister.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/AbstractSchedulerTask.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/BeanScannerScheduler.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/EmailSenderRegister.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/EmailSenderScheduler.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/EmailSenderRegisterImpl.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/AbstractSQL.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/ApplicationInfo.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/HotConfigResetScheduler.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/Nvl.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/SQL.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/Application.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/LiquibaseManager.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/SchedulerConfiguration.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/DataSourceConfiguration.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/BeanScannerDao.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/BeanScannerHotConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/BeanScannerApp.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/BeanScannerController.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/BeanScannerWebConfig.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/SwaggerConfiguration.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/build.gradle" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/EmailSenderConfiguration.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/security_crypto/impl/SecuritySourceOnFiles.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/security_crypto/impl/AbstractSecuritySource.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/AddressRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/AddressDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/CustomerRegisterImpl.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.component.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/.gitignore" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/.gitignore" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/android/.gitignore" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRecord.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/implementations/api/apiProd.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/api.service.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderShortRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/ServerUtil.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/CustomerRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRouteWay.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-page.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1299" />
-    <option name="height" value="743" />
+  <component name="PerforceDirect.Settings">
+    <option name="ENABLED" value="false" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="138" />
+    <option name="width" value="1151" />
+    <option name="height" value="492" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,63 +407,65 @@
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="fcb0292d-3078-4040-bb9b-c730552b199c" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593504488465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594138570632" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ngx-admin/ngx-admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/carpet_cleaner.client/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.register" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kz.nu.carpet_cleaner.controller.controller" />
+      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kz.nu.carpet_cleaner.controller.model" />
+      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
+      <recent name="kz.nu.carpet_cleaner.register.dao" />
+      <recent name="kz.nu.carpet_cleaner.controller.register" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,7 +479,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kz.nu.carpet_cleaner.register.Application" />
@@ -226,375 +507,626 @@
       <updated>1593499299767</updated>
       <workItem from="1593499305724" duration="534000" />
       <workItem from="1593500319340" duration="4001000" />
-      <workItem from="1593504523978" duration="600000" />
+      <workItem from="1593504523978" duration="3416000" />
+      <workItem from="1593583385380" duration="13616000" />
+      <workItem from="1593836951614" duration="1971000" />
+      <workItem from="1593838967808" duration="22549000" />
+      <workItem from="1593929537655" duration="844000" />
+      <workItem from="1593931692838" duration="477000" />
+      <workItem from="1593933378133" duration="10491000" />
+      <workItem from="1593951681808" duration="54172000" />
+      <workItem from="1594094895473" duration="15582000" />
+      <workItem from="1594111552211" duration="19606000" />
     </task>
+    <task id="LOCAL-00001" summary="copy ngx-admin dashboard and change to ours">
+      <created>1593586294108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593586294108</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove git keep">
+      <created>1593587182833</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593587182833</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add multi language">
+      <created>1593588866644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593588866644</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add translate">
+      <created>1593596274068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593596274068</updated>
+    </task>
+    <task id="LOCAL-00005" summary="order modal window for add order">
+      <created>1593845740155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593845740155</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add server and docker">
+      <created>1593926899158</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593926899158</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add ionic test file project">
+      <created>1593941394875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593941394875</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add yandex map">
+      <created>1593946637316</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593946637316</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add map">
+      <created>1593946698597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593946698597</updated>
+    </task>
+    <task id="LOCAL-00010" summary="draw client form">
+      <created>1594032173221</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594032173221</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавил сохранение данных и плюс обработка карты">
+      <created>1594110513310</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1594110513310</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Сохранение номера заказа и gitignore">
+      <created>1594111203140</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594111203140</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Добавил gitignore">
+      <created>1594111393062</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594111393062</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5135000" />
+    <option name="totallyTimeSpent" value="147259000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="0" y="14" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36711892" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74811465" visible="true" weight="0.1995731" />
+      <window_info id="Structure" order="1" sideWeight="0.25188538" side_tool="true" weight="0.19530416" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5010776" side_tool="true" weight="0.18676628" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5143824" />
-      <window_info anchor="bottom" id="Docker" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" visible="true" weight="0.32994923" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43426725" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.39978448" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32994923" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49786553" weight="0.28556034" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50213444" side_tool="true" weight="0.28556034" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3297414" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.3297414" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.63793105" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32977587" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32977587" />
+      <window_info anchor="right" id="Key Promoter X" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74811465" visible="true" weight="0.1995731" />
+      <window_info id="Structure" order="1" sideWeight="0.25188538" side_tool="true" weight="0.19530416" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5010776" side_tool="true" weight="0.18676628" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43426725" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39978448" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32994923" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49786553" weight="0.28556034" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50213444" side_tool="true" weight="0.28556034" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3297414" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.3297414" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="17" visible="true" weight="0.63793105" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.32977587" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32977587" />
+      <window_info anchor="right" id="Key Promoter X" order="11" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="copy ngx-admin dashboard and change to ours" />
+    <MESSAGE value="remove git keep" />
+    <MESSAGE value="add multi language" />
+    <MESSAGE value="add translate" />
+    <MESSAGE value="order modal window for add order" />
+    <MESSAGE value="add server and docker" />
+    <MESSAGE value="add ionic test file project" />
+    <MESSAGE value="add yandex map" />
+    <MESSAGE value="add map" />
+    <MESSAGE value="draw client form" />
+    <MESSAGE value="Добавил сохранение данных и плюс обработка карты" />
+    <MESSAGE value="Сохранение номера заказа и gitignore" />
+    <MESSAGE value="Добавил gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил gitignore" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html</url>
+          <line>196</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/carpet_cleaner.client/src/app/interfaces/iapi.ts</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/TwilioSmsSendController.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/TwilioSmsSender.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/TaskExecutorConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/CacheStorage.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/AixPostDao.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/AixInServiceConfig.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/AcsInServiceConfig.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/CsdInServiceConfig.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/liquibase/DbParams.java">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="35" column="48" selection-start-line="32" selection-start-column="20" selection-end-line="35" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/IndexesConfig.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/DbConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/mapper/PostMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/DbCacheRegister.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/DbCacheRegisterImpl.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/BeanScannerScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/CsdMigrationScheduler.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/AbstractSchedulerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/EmailSenderRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/EmailSenderScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/AbstractRegister.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/EmailSenderConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-556">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/EmailSenderRegisterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/PostMigrationScheduler.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/IndexScheduler.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/scheduler/HotConfigResetScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/SQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/Nvl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/ApplicationInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/util/AbstractSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="178" column="33" lean-forward="true" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/LiquibaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/SchedulerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/DataSourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/BeanScannerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/BeanScannerHotConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/BeanScannerRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/BeanScannerApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/BeanScannerWebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/SwaggerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/EmailSenderConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/security_crypto/SecuritySourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/security_crypto/impl/SecuritySourceOnFiles.java" />
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/BeanScannerController.java">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/map/map.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/angular8-yandex-maps/lib/components/yandex-multiroute-component/yandex-multiroute.component.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/interval.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/dictionary.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/AddressRecord.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/error.interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/providers/guards/auth.guard.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/@angular/common/http/http.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/theme/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/AddressRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/CustomerRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/ServerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/security_crypto/impl/AbstractSecuritySource.java">
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/List.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/security_crypto/impl/SecuritySourceConfigDefault.java">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderShortRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="40" />
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/ApiError.java">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRouteWay.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-page.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="69" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -652,7 +1184,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>kz.nu.carpet_cleaner.carpet_cleaner</last-edited>
+          <last-edited>mobile|kz.nu.carpet_cleaner.carpet_cleaner</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

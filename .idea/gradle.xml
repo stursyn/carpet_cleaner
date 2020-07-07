@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/carpet_cleaner.client" />
             <option value="$PROJECT_DIR$/carpet_cleaner.controller" />
+            <option value="$PROJECT_DIR$/carpet_cleaner.mobile" />
             <option value="$PROJECT_DIR$/carpet_cleaner.register" />
           </set>
         </option>

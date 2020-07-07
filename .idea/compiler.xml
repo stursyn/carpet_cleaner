@@ -10,6 +10,8 @@
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.main" target="1.8" />
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.test" target="1.8" />
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.main" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.mobile.main" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.mobile.test" target="1.8" />
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.main" target="1.8" />
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.test" target="1.8" />
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.test" target="1.8" />

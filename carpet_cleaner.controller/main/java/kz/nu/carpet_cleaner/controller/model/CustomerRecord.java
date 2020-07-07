@@ -1,5 +1,9 @@
 package kz.nu.carpet_cleaner.controller.model;
 
+import kz.nu.carpet_cleaner.controller.util.ServerUtil;
+
+import static kz.nu.carpet_cleaner.controller.util.ServerUtil.nvl;
+
 public class CustomerRecord {
   public String id;
   public String surname;
@@ -10,10 +14,5 @@ public class CustomerRecord {
 
   public void generateFIO() {
     this.fio = nvl(this.surname, false) + nvl(this.name, false) + nvl(this.patronymic,true);
-  }
-
-  private String nvl(String value, boolean last) {
-    if(value == null) return "";
-    return value + (last?"":" ");
   }
 }
