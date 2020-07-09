@@ -6,11 +6,11 @@ import {ModalController} from "@ionic/angular";
 import {OrderDetailComponent} from "../order-detail/order-detail.component";
 
 @Component({
-  selector: 'app-order-list',
-  templateUrl: './order-list.page.html',
-  styleUrls: ['./order-list.page.scss'],
+  selector: 'app-done-orders',
+  templateUrl: './done-orders.page.html',
+  styleUrls: ['./done-orders.page.scss'],
 })
-export class OrderListPage implements OnInit {
+export class DoneOrdersPage implements OnInit {
   needToDeliverOrderList: OrderShortRecord[];
   needToPickUpOrderList: OrderShortRecord[];
   pickedUpCount: number = 0;
@@ -35,12 +35,12 @@ export class OrderListPage implements OnInit {
     this.pickedUpCount = 0;
     this.deliveredCount = 0;
 
-    this.deliverService.loadOrderByStatus("CREATED")
+    this.deliverService.loadOrderByStatus("PICKED_UP")
       .then(res => {
         this.needToPickUpOrderList = res;
         if(action) action.complete();
       });
-    this.deliverService.loadOrderByStatus("TO_DELIVER")
+    this.deliverService.loadOrderByStatus("DELIVERED")
       .then(res => {
         this.needToDeliverOrderList = res;
         if(action) action.complete();
@@ -65,8 +65,8 @@ export class OrderListPage implements OnInit {
         presentingElement: await this.modalController.getTop(),
         componentProps: {
           'id': event.id,
-          'showCancelButton': event.canCancelOrder,
-          'showSubmitButton': true
+          'showCancelButton': event.showCancelButton,
+          'showSubmitButton': false
         }
       });
 

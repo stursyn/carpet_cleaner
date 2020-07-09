@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import {MenuController, Platform} from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import {TranslateService} from "@ngx-translate/core";
@@ -15,6 +15,7 @@ import {SessionService} from "./services/session.service";
   styleUrls: ['app.component.scss']
 })
 export class AppComponent implements OnInit {
+    navigate:any;
 
   constructor(
     private translate: TranslateService,
@@ -23,13 +24,13 @@ export class AppComponent implements OnInit {
     private statusBar: StatusBar,
     private session: SessionService,
     private http: HttpClient,
-    private apiService: ApiService ) {
+    private apiService: ApiService,
+    private menu: MenuController) {
 
     this.initializeApp();
   }
 
   initializeApp() {
-
     this.translate.setDefaultLang('ru');
     this.session.registerCulture('ru-KZ');
     this.session.registerCulture('kz-KZ');
@@ -38,6 +39,28 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+
+    this.navigate =
+      [
+        {
+          title : 'orders',
+          url   : "/main/order-list",
+          iconSrc  :  "assets/order.svg",
+          icon : null
+        },
+        {
+          title : 'doneOrders',
+          url   : "/actions/done-orders",
+          iconSrc  :  "assets/order-done.svg",
+          icon : null
+        },
+        {
+          title : 'addNewOrder',
+          url   : "/main/order-map",
+          iconSrc  :  "assets/order-add.svg",
+          icon : null
+        }
+      ];
   }
 
   ngOnInit(): void {

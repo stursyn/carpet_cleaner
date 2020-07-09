@@ -10,7 +10,8 @@ import {DeliverService} from "../../services/deliver.service";
 })
 export class OrderDetailComponent implements OnInit {
   @Input() id: string;
-  @Input() canCancelOrder:boolean;
+  @Input() showCancelButton:boolean;
+  @Input() showSubmitButton:boolean;
   order:OrderFullRecord = new OrderFullRecord();
 
   constructor(private modalCtrl:ModalController,

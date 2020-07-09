@@ -12,12 +12,7 @@ export const routes: Routes = [
     loadChildren: () => import ('./operator/operator.module')
       .then(m => m.OperatorModule)
   },
-  {
-    path: 'pages',
-    loadChildren: () => import('./example_pages/pages.module')
-      .then(m => m.PagesModule),
-  },
-  { path: '**', redirectTo: '/pages' },
+  { path: '**', redirectTo: '/operator' },
 ];
 
 const config: ExtraOptions = {

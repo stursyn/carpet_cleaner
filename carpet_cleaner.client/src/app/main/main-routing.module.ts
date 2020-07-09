@@ -2,7 +2,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { MainComponent } from './main.component';
-import {NotFoundComponent} from "../example_pages/miscellaneous/not-found/not-found.component";
 
 const routes: Routes = [{
   path: '',
@@ -16,11 +15,7 @@ const routes: Routes = [{
       path: 'order',
       loadChildren: () => import("./order/order.module")
         .then(m => m.OrderModule),
-    },
-    {
-      path: '**',
-      component: NotFoundComponent,
-    },
+    }
   ],
 }];
 

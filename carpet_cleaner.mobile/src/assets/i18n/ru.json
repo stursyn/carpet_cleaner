@@ -40,5 +40,8 @@
   "pickUpDateDisplay": "Дата вывоза товара",
   "delivered": "Доставлено",
   "finishOrder": "Завершить заказ",
-  "cancelOrder": "Отменить заказ"
+  "cancelOrder": "Отменить заказ",
+  "actions": "Действия",
+  "doneOrders": "Выполненные заказы",
+  "pickedUp": "Вывезено"
 }

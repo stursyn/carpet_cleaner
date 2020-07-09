@@ -1,67 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46cf8b17-77c0-4b76-9a3c-5d6c728b3bc2" name="Default Changelist" comment="order modal window for add order">
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderFullRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderFullRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___api_null_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___api_null_war__exploded_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_client_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_client_war__exploded_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_controller_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_controller_war__exploded_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_mobile_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_mobile_war__exploded_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.test.iml" afterDir="false" />
+    <list default="true" id="46cf8b17-77c0-4b76-9a3c-5d6c728b3bc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/components.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/order-add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/order-done.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/order.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderShortRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderShortRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/resources/android/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/resources/android/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs-bar-horizontal.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs-line.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs-multiple-xaxis.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs-pie.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs-radar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/chartjs/chartjs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/charts-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/charts.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/charts.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3-advanced-pie.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3-area-stack.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3-line.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3-pie.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3-polar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/d3/d3.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-area-stack.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-bar-animation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-line.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-multiple-xaxis.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-pie.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts-radar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/charts/echarts/echarts.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/contacts/contacts.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/contacts/contacts.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/contacts/contacts.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/dashboard.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/dashboard.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/dashboard.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/dashboard.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/electricity/electricity-chart/electricity-chart.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/electricity/electricity-chart/electricity-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/electricity/electricity.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/electricity/electricity.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/electricity/electricity.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/kitten/kitten.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/kitten/kitten.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/kitten/kitten.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/player/player.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/player/player.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/player/player.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/room-selector/room-selector.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/room-selector/room-selector.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/room-selector/room-selector.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/rooms.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/rooms/rooms.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/security-cameras/security-cameras.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/security-cameras/security-cameras.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/security-cameras/security-cameras.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/solar/solar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/solar/solar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/status-card/status-card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/status-card/status-card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/temperature/temperature-dragger/temperature-dragger.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/temperature/temperature-dragger/temperature-dragger.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/temperature/temperature-dragger/temperature-dragger.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/temperature/temperature.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/temperature/temperature.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/temperature/temperature.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/traffic/traffic-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/traffic/traffic.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/traffic/traffic.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/weather/weather.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/weather/weather.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/dashboard/weather/weather.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/chart-panel-header/chart-panel-header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/chart-panel-header/chart-panel-header.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/chart-panel-header/chart-panel-header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/chart-panel-summary/chart-panel-summary.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/chart-panel-summary/chart-panel-summary.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/charts-panel.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/charts-panel.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/charts-panel.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/charts/charts-common.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/charts/orders-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/charts-panel/charts/profit-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/chart/country-orders-chart.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/chart/country-orders-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/country-orders.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/country-orders.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/map/country-orders-map.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/map/country-orders-map.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/country-orders/map/country-orders-map.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/e-commerce.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/e-commerce.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/e-commerce.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/back-side/earning-card-back.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/back-side/earning-card-back.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/back-side/earning-card-back.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/back-side/earning-pie-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/earning-card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/earning-card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/earning-card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/front-side/earning-card-front.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/front-side/earning-card-front.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/front-side/earning-card-front.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/earning-card/front-side/earning-live-update-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/legend-chart/enum.legend-item-color.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/legend-chart/legend-chart.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/legend-chart/legend-chart.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/legend-chart/legend-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/back-side/stats-area-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/back-side/stats-card-back.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/back-side/stats-card-back.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/back-side/stats-card-back.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/front-side/stats-bar-animation-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/front-side/stats-card-front.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/front-side/stats-card-front.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/front-side/stats-card-front.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/profit-card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/profit-card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/profit-card/profit-card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/progress-section/progress-section.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/progress-section/progress-section.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/progress-section/progress-section.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/slide-out/slide-out.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/slide-out/slide-out.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/slide-out/slide-out.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/back-side/traffic-back-card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/back-side/traffic-back-card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/back-side/traffic-back-card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/back-side/traffic-bar-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/front-side/traffic-bar/traffic-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/front-side/traffic-bar/traffic-bar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/front-side/traffic-bar/traffic-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/front-side/traffic-front-card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/front-side/traffic-front-card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/front-side/traffic-front-card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/traffic-cards-header/traffic-cards-header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/traffic-cards-header/traffic-cards-header.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/traffic-cards-header/traffic-cards-header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/traffic-reveal-card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/traffic-reveal-card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/traffic-reveal-card/traffic-reveal-card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/user-activity/user-activity.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/user-activity/user-activity.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/user-activity/user-activity.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-analytics-chart/visitors-analytics-chart.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-analytics-chart/visitors-analytics-chart.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-analytics.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-analytics.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-analytics.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-statistics/visitors-statistics.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-statistics/visitors-statistics.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/e-commerce/visitors-analytics/visitors-statistics/visitors-statistics.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/editors/ckeditor/ckeditor.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/editors/ckeditor/ckeditor.loader.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/editors/editors-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/editors/editors.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/editors/editors.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/editors/tiny-mce/tiny-mce.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/alert/alert.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/alert/alert.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar-kit/calendar-kit.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar-kit/calendar-kit.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar-kit/calendar-kit.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar-kit/month-cell/month-cell.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar-kit/month-cell/month-cell.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar-kit/month-cell/month-cell.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar/calendar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar/calendar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar/calendar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar/day-cell/day-cell.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar/day-cell/day-cell.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/calendar/day-cell/day-cell.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/chat/bot-replies.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/chat/chat.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/chat/chat.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/chat/chat.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/chat/chat.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/chat/messages.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/extra-components-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/extra-components.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/extra-components.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/form-inputs/nebular-form-inputs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/form-inputs/nebular-form-inputs.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/form-inputs/nebular-form-inputs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/form-inputs/nebular-select/nebular-select.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/form-inputs/nebular-select/nebular-select.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/form-inputs/nebular-select/nebular-select.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/progress-bar/interactive-progress-bar/interactive-progress-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/progress-bar/interactive-progress-bar/interactive-progress-bar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/progress-bar/interactive-progress-bar/interactive-progress-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/progress-bar/progress-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/progress-bar/progress-bar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/progress-bar/progress-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-color/spinner-color.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-color/spinner-color.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-in-buttons/spinner-in-buttons.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-in-buttons/spinner-in-buttons.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-in-buttons/spinner-in-buttons.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-in-tabs/spinner-in-tabs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-in-tabs/spinner-in-tabs.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-in-tabs/spinner-in-tabs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-sizes/spinner-sizes.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner-sizes/spinner-sizes.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/extra-components/spinner/spinner.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/buttons/buttons.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/buttons/buttons.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/buttons/buttons.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/datepicker/datepicker.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/datepicker/datepicker.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/datepicker/datepicker.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/form-inputs/form-inputs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/form-inputs/form-inputs.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/form-inputs/form-inputs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/form-layouts/form-layouts.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/form-layouts/form-layouts.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/form-layouts/form-layouts.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/forms-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/forms.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/forms/forms.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/accordion/accordion.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/accordion/accordion.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/accordion/accordion.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/infinite-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/infinite-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/infinite-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/news-post-placeholder/news-post-placeholder.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/news-post-placeholder/news-post-placeholder.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/news-post-placeholder/news-post-placeholder.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/news-post/news-post.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/infinite-list/news-post/news-post.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/layout-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/layout.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/layout.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/list/fruits-list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/list/list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/list/list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/list/list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/news.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/stepper/stepper.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/stepper/stepper.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/stepper/stepper.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/tabs/tabs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/tabs/tabs.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/layout/tabs/tabs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/bubble/bubble-map.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/bubble/bubble-map.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/gmaps/gmaps.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/gmaps/gmaps.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/gmaps/gmaps.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/leaflet/leaflet.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/leaflet/leaflet.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/maps-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/maps.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/maps.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/entity/position.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/map/map.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/map/map.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/map/map.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/search-map.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/search-map.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/search/search.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/maps/search-map/search/search.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/miscellaneous/miscellaneous-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/miscellaneous/miscellaneous.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/miscellaneous/miscellaneous.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/miscellaneous/not-found/not-found.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/miscellaneous/not-found/not-found.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/miscellaneous/not-found/not-found.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/dialog-name-prompt/dialog-name-prompt.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/dialog-name-prompt/dialog-name-prompt.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/dialog-name-prompt/dialog-name-prompt.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/showcase-dialog/showcase-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/showcase-dialog/showcase-dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/dialog/showcase-dialog/showcase-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/modal-overlays-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/modal-overlays.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/modal-overlays.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/popovers/popover-examples.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/popovers/popovers.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/popovers/popovers.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/popovers/popovers.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/toastr/toastr.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/toastr/toastr.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/toastr/toastr.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/tooltip/tooltip.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/tooltip/tooltip.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/tooltip/tooltip.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/window/window-form/window-form.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/window/window-form/window-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/window/window.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/window/window.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/modal-overlays/window/window.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/pages-menu.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/pages-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/pages.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/pages.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/pages.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/smart-table/smart-table.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/smart-table/smart-table.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/smart-table/smart-table.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/tables-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/tables.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/tables.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/tree-grid/tree-grid.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/tree-grid/tree-grid.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/tables/tree-grid/tree-grid.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/grid/grid.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/grid/grid.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/grid/grid.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/icons/icons.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/icons/icons.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/icons/icons.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/search-fields/search-fields.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/search-fields/search-fields.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/typography/typography.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/typography/typography.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/typography/typography.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/ui-features-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/ui-features.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/example_pages/ui-features/ui-features.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-page.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -129,75 +435,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
-              <folding>
-                <element signature="e#3079#3080#0" expanded="true" />
-                <element signature="e#3139#3140#0" expanded="true" />
-                <element signature="e#3196#3197#0" expanded="true" />
-                <element signature="e#3259#3260#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-450" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="42" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -206,22 +454,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+            <state relative-caret-position="-209">
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="45">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="7" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.module.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -264,6 +573,7 @@
       <find>&quot; +</find>
       <find>&lt;h1&gt;</find>
       <find>h3</find>
+      <find>showCancelButton</find>
     </findStrings>
     <replaceStrings>
       <replace>nu.carpet_cleaner</replace>
@@ -277,31 +587,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/implementations/api/apiProd.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/api.service.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/util/ServerUtil.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/CustomerRecord.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRouteWay.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list-page.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-map/order-map.page.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/main/main.page.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.scss" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/resources/android/xml/network_security_config.xml" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.html" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/order-list/order-list.page.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.scss" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.scss" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantRecord.ts" />
@@ -314,20 +602,42 @@
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderFullRecord.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderFullRecord.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/components.module.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.html" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" />
         <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -355,225 +665,37 @@
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
               <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
               <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
               <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
               <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="operator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
               <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="order-detail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="order-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="order-map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="i18n" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-              <item name="v001" type="462c0819:PsiDirectoryNode" />
+              <item name="operator" type="462c0819:PsiDirectoryNode" />
+              <item name="start_page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
@@ -606,7 +728,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594296865620" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594308361667" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ngx-admin/ngx-admin" />
@@ -620,8 +742,11 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/carpet_cleaner.client/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kz.nu.carpet_cleaner.controller.model" />
+      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
+      <recent name="kz.nu.carpet_cleaner.register.dao" />
+      <recent name="kz.nu.carpet_cleaner.controller.register" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models" />
@@ -634,11 +759,9 @@
       <recent name="kz.nu.carpet_cleaner.controller.controller" />
       <recent name="kz.nu.carpet_cleaner.register.register.impl" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="kz.nu.carpet_cleaner.controller.model" />
-      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
-      <recent name="kz.nu.carpet_cleaner.register.dao" />
-      <recent name="kz.nu.carpet_cleaner.controller.register" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -695,7 +818,7 @@
       <workItem from="1594185962400" duration="9101000" />
       <workItem from="1594232362111" duration="734000" />
       <workItem from="1594233610604" duration="16099000" />
-      <workItem from="1594285567443" duration="9696000" />
+      <workItem from="1594285567443" duration="21157000" />
     </task>
     <task id="LOCAL-00001" summary="copy ngx-admin dashboard and change to ours">
       <created>1593586294108</created>
@@ -788,11 +911,18 @@
       <option name="project" value="LOCAL" />
       <updated>1594111393062</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add order modal window and his functionality">
+      <created>1594296915994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1594296915994</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184321000" />
+    <option name="totallyTimeSpent" value="195782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,13 +948,13 @@
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" visible="true" weight="0.43211207" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43211207" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.25215518" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4994664" weight="0.3297414" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4967983" weight="0.22198276" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4967983" visible="true" weight="0.49030173" />
       <window_info anchor="bottom" id="Docker" order="10" weight="0.3297414" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50160086" side_tool="true" weight="0.43211207" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3286638" />
@@ -914,7 +1044,8 @@
     <MESSAGE value="Добавил сохранение данных и плюс обработка карты" />
     <MESSAGE value="Сохранение номера заказа и gitignore" />
     <MESSAGE value="Добавил gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил gitignore" />
+    <MESSAGE value="add order modal window and his functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add order modal window and his functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -937,307 +1068,192 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.spec.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/@ionic/angular/directives/navigation/ion-tabs.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-49">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/resources/android/xml/network_security_config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/@ionic/core/dist/types/components/modal/modal-interface.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRouteWay.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/CustomerRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/OrderDetailData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderShortRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantRecord.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderShortRecord.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OperatorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderFullRecord.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderFullRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/map/map.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/components/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/theme.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state>
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderFullRecord.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        <state relative-caret-position="231">
+          <caret line="5295" column="4" selection-start-line="5295" selection-start-column="4" selection-end-line="5295" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="191" column="14" selection-start-line="191" selection-start-column="14" selection-end-line="191" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/components.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="205">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#924#925#0" expanded="true" />
@@ -1248,86 +1264,224 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="150">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="261">
+          <caret line="62" column="64" lean-forward="true" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#3079#3080#0" expanded="true" />
+            <element signature="e#3139#3140#0" expanded="true" />
+            <element signature="e#3196#3197#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.scss">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="307">
+          <caret line="29" column="133" selection-start-line="29" selection-start-column="133" selection-end-line="29" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="178">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+        <state relative-caret-position="445">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
-            <element signature="e#3079#3080#0" expanded="true" />
-            <element signature="e#3139#3140#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="42" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        <state relative-caret-position="430">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/@ngx-translate/core/lib/translate.service.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
+        <state relative-caret-position="158">
+          <caret line="160" column="4" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.module.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

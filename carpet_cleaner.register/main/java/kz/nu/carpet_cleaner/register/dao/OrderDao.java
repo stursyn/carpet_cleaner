@@ -26,8 +26,8 @@ public interface OrderDao {
       " inner join customer x1 on x1.id = x.customerId " +
       " left join customer_address x2 on x2.id = x.pickUpAddress " +
       " join customer_address x3 on x3.id = x.deliveryAddress " +
-      " where (x.cleanStatus = #{orderStatus} and x.pickUpDate::date  = current_date and 'CREATED' = #{orderStatus}) " +
-      "     or (x.cleanStatus = #{orderStatus} and x.deliveryDate::date  = current_date and 'TO_DELIVER' = #{orderStatus})")
+      " where (x.cleanStatus = #{orderStatus} and x.pickUpDate::date  = current_date and x.cleanStatus in ('CREATED','PICKED_UP')) " +
+      "     or (x.cleanStatus = #{orderStatus} and x.deliveryDate::date  = current_date and x.cleanStatus in ('TO_DELIVER','DELIVERED'))")
   List<OrderDetailData> loadOrderByStatus(@Param("orderStatus") String orderStatus);
 
   @Select("select x.number, x1.surname, x1.name, x1.patronymic, x1.phoneNumber as customerPhoneNumber, x2.displayAddress as pickUpAddress, x.pickUpDate" +

@@ -3,23 +3,22 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{'orders'|translate}}</ion-title>
+    <ion-title>{{'doneOrders'|translate}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content class="list-avatar-page">
+<ion-content>
   <ion-refresher pullFactor="1.5" class="refresher-content ion-align-items-start" slot="fixed" (ionRefresh)="doRefresh($event)" >
     <ion-refresher-content>
     </ion-refresher-content>
   </ion-refresher>
-
-  <app-ion-order-list-group [orderList]="needToDeliverOrderList" [itemGroupTitle]="'needToDeliver'"
+  <app-ion-order-list-group [orderList]="needToDeliverOrderList" [itemGroupTitle]="'delivered'"
                             [doneCount]="deliveredCount" [itemIsDetail]="true" [itemIsButton]="true"
-                            (itemClicked)="showOrderDetail($event)" [canCancelOrder]="false" [showCount]="true">
+                            (itemClicked)="showOrderDetail($event)" [canCancelOrder]="false">
   </app-ion-order-list-group>
-  <app-ion-order-list-group [orderList]="needToPickUpOrderList" [itemGroupTitle]="'needToPickUp'"
+  <app-ion-order-list-group [orderList]="needToPickUpOrderList" [itemGroupTitle]="'pickedUp'"
                             [doneCount]="pickedUpCount" [itemIsDetail]="true" [itemIsButton]="true"
-                            (itemClicked)="showOrderDetail($event)" [canCancelOrder]="true" [showCount]="true">
+                            (itemClicked)="showOrderDetail($event)" [canCancelOrder]="true">
   </app-ion-order-list-group>
 </ion-content>

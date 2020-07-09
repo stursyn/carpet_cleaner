@@ -1,17 +1,16 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainPage} from './main.page';
-import {OrderListPageModule} from "../order-list/order-list-page.module";
 
 const routes: Routes = [
   {
-    path: 'main',
+    path: '',
     component: MainPage,
     children: [
       {
         path: 'order-list',
         loadChildren: () => import('../order-list/order-list-page.module')
-          .then(m => OrderListPageModule)
+          .then(m => m.OrderListPageModule)
       },
       {
         path: 'order-map',
@@ -20,15 +19,9 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/main/order-list',
-        pathMatch: 'full'
-      }
+        redirectTo: '/main/order-list'
+      },
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/main/order-list',
-    pathMatch: 'full'
   }
 ];
 

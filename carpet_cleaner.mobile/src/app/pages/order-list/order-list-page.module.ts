@@ -6,6 +6,7 @@ import {OrderListPageRoutingModule} from "./order-list-routing.module";
 import {TranslateModule} from "@ngx-translate/core";
 import {OrderListPage} from "./order-list.page";
 import {OrderDetailModule} from "../order-detail/order-detail.module";
+import {ComponentsModule} from "../../components/components.module";
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {OrderDetailModule} from "../order-detail/order-detail.module";
     IonicModule,
     OrderListPageRoutingModule,
     TranslateModule,
-    OrderDetailModule
+    OrderDetailModule,
+    ComponentsModule
   ],
   declarations: [OrderListPage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
