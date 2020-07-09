@@ -1,4 +1,5 @@
 export class OrderShortRecord {
+  id:string;
   displayTitle:string;
   description:string;
   latitude:number;

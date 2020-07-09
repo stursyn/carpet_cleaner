@@ -3,6 +3,7 @@ package kz.nu.carpet_cleaner.register.model;
 import java.math.BigDecimal;
 
 public class OrderDetailData {
+  public String id;
   public String surname;
   public String name;
   public String patronymic;

@@ -1,0 +1,199 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{'order'|translate}}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-refresher class="refresher-content ion-align-items-start" slot="fixed" >
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list-header>{{'customer'|translate}}</ion-list-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-label>
+          <p>{{'fio' | translate}}:</p>
+        </ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label>
+          <h2>{{order.customerFio}}</h2>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-label>
+          <p>{{'phoneNumber' | translate}}:</p>
+        </ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <h2>{{order.customerPhoneNumber}}</h2>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list-header>{{'details'|translate}}</ion-list-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-label>
+          <p>{{'orderNumber' | translate}}:</p>
+        </ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <h2>{{order.number}}</h2>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-label>
+          <p>{{'pickUpAddress' | translate}}:</p>
+        </ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <h2>{{order.pickUpAddress}}</h2>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-label>
+          <p>{{'pickUpDateDisplay' | translate}}:</p>
+        </ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <h2>{{order.pickUpDateDisplay}}</h2>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>{{'merchants'|translate}}</ion-label>
+      </ion-item-divider>
+      <div *ngFor="let merchant of order.merchantList">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label>
+                <p>{{'merchantService' | translate}}:</p>
+              </ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label>
+                <h2>{{merchant.service}}</h2>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label>
+                <p>{{'merchantType' | translate}}:</p>
+              </ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label>
+                <h2>{{merchant.type}}</h2>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label>
+                <p>{{'merchantCount' | translate}}:</p>
+              </ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label>
+                <h2>{{merchant.count}}</h2>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label>
+                <p>{{'merchantMaterial' | translate}}:</p>
+              </ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label>
+                <h2>{{merchant.material}}</h2>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label>
+                <p>{{'merchantMeasurement' | translate}}:</p>
+              </ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label>
+                <h2>{{merchant.measurement}}</h2>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <div *ngIf="merchant.showSize">
+            <ion-row>
+              <ion-col size="4">
+                <ion-label>
+                  <p>{{'merchantWidth' | translate}}:</p>
+                </ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-label>
+                  <h2>{{merchant.width}}</h2>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="4">
+                <ion-label>
+                  <p>{{'merchantHeight' | translate}}:</p>
+                </ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-label>
+                  <h2>{{merchant.height}}</h2>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+          </div>
+          <ion-item-divider>
+          </ion-item-divider>
+        </ion-grid>
+      </div>
+    </ion-item-group>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col>
+      <ion-button *ngIf="canCancelOrder" expand="block" (click)="cancelOrder()">
+        {{'cancelOrder'|translate}}
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" (click)="finishOrder()">
+      {{'finishOrder'|translate}}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

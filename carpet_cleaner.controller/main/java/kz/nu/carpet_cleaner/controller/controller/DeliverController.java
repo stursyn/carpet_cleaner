@@ -1,6 +1,7 @@
 package kz.nu.carpet_cleaner.controller.controller;
 
 import kz.nu.carpet_cleaner.controller.model.OperatorOrderToSave;
+import kz.nu.carpet_cleaner.controller.model.OrderFullRecord;
 import kz.nu.carpet_cleaner.controller.model.OrderShortRecord;
 import kz.nu.carpet_cleaner.controller.register.OperatorRegister;
 import kz.nu.carpet_cleaner.controller.register.OrderRegister;
@@ -19,5 +20,27 @@ public class DeliverController {
   @GetMapping("orderByStatus")
   public List<OrderShortRecord> orderByStatus(@RequestParam("orderStatus") String orderStatus) {
     return register.orderByStatus(orderStatus);
+  }
+
+  @GetMapping("orderDetail")
+  public OrderFullRecord orderDetail(@RequestParam("orderId") String orderId) {
+    return register.orderDetail(orderId);
+  }
+
+  @GetMapping("orderMoveStage")
+  public void orderMoveStage(@RequestParam("orderId") String orderId) {
+    register.orderMoveStage(orderId);
+    return;
+  }
+
+  @GetMapping("cancelOrder")
+  public void cancelOrder(@RequestParam("orderId") String orderId) {
+    register.cancelOrder(orderId);
+    return;
+  }
+
+  @GetMapping("doneOrderCount")
+  public Integer doneOrderCount(@RequestParam("orderStatus") String orderStatus) {
+    return register.doneOrderCount(orderStatus);
   }
 }

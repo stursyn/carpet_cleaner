@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/carpet_cleaner.mobile/build/libs/exploded/carpet_cleaner.mobile.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$">
-        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpJbXBsZW1lbnRhdGlvbi1UaXRsZTogY2FycGV0X2NsZWFuZXIubW9iaWxlDQpJbXBsZW1lbnRhdGlvbi1WZXJzaW9uOiAxLjANCkltcGxlbWVudGF0aW9uLVZlbmRvcjogbnUNCkNyZWF0ZWQtQnk6IHNlaWl0DQpDcmVhdGVkLUF0OiAyMDIwLTA3LTA3LzE2OjAzOjAxDQoNCg==</manifest>
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpJbXBsZW1lbnRhdGlvbi1UaXRsZTogY2FycGV0X2NsZWFuZXIubW9iaWxlDQpJbXBsZW1lbnRhdGlvbi1WZXJzaW9uOiAxLjANCkltcGxlbWVudGF0aW9uLVZlbmRvcjogbnUNCkNyZWF0ZWQtQnk6IHNlaWl0DQpDcmVhdGVkLUF0OiAyMDIwLTA3LTA5LzAwOjE5OjU1DQoNCg==</manifest>
       </options>
     </properties>
     <root id="root">

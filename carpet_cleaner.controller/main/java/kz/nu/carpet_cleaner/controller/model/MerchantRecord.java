@@ -9,7 +9,9 @@ public class MerchantRecord {
   public String merchantType;
   public String merchantMaterial;
   public String merchantMeasurement;
-  public String serviceType;
+  public String merchantService;
   public BigDecimal servicePrice;
+  public BigDecimal merchantWidth;
+  public BigDecimal merchantHeight;
 
 }

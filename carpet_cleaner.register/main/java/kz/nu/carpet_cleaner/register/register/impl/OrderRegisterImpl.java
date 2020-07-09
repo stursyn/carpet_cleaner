@@ -1,10 +1,7 @@
 package kz.nu.carpet_cleaner.register.register.impl;
 
 import kz.greetgo.util.RND;
-import kz.nu.carpet_cleaner.controller.model.AddressRecord;
-import kz.nu.carpet_cleaner.controller.model.OrderRecord;
-import kz.nu.carpet_cleaner.controller.model.OrderShortRecord;
-import kz.nu.carpet_cleaner.controller.model.OrderStatus;
+import kz.nu.carpet_cleaner.controller.model.*;
 import kz.nu.carpet_cleaner.controller.register.OrderRegister;
 import kz.nu.carpet_cleaner.controller.util.DateUtil;
 import kz.nu.carpet_cleaner.controller.util.ServerUtil;
@@ -65,9 +62,40 @@ public class OrderRegisterImpl implements OrderRegister {
     List<OrderShortRecord> ret = new ArrayList<>();
     List<OrderDetailData> orderDetailData = orderDao.loadOrderByStatus(orderStatus);
     orderDetailData.forEach(orderData ->
-      ret.add(OrderShortRecord.of( nvl(orderData.merchantTypeTitle, true) + " - " + nvl(orderData.surname, false) + nvl(orderData.name, false)
+      ret.add(OrderShortRecord.of( orderData.id, nvl(orderData.surname, false) + nvl(orderData.name, false)
           + nvl(orderData.patronymic, true), "Телефон: " + orderData.phoneNumber + " \n Адрес: " + orderData.displayAddress,
           orderData.latitude, orderData.longitude)));
     return ret;
+  }
+
+  @Override
+  public OrderFullRecord orderDetail(String orderId) {
+    OrderFullRecord ret = orderDao.loadOrderFullDisplayRecord(orderId);
+    ret.merchantList.addAll(orderDao.loadMerchantDisplayRecordList(orderId));
+    ret.formatData();
+    return ret;
+  }
+
+  @Override
+  public void orderMoveStage(String orderId) {
+    switch (orderDao.loadStage(orderId)) {
+      case CREATED:
+        orderDao.updateStatus(orderId, OrderStatus.PICKED_UP);
+        break;
+      case TO_DELIVER:
+        orderDao.updateStatus(orderId, OrderStatus.DELIVERED);
+        break;
+    }
+
+  }
+
+  @Override
+  public Integer doneOrderCount(String orderStatus) {
+    return orderDao.loadDoneOrderForToday(orderStatus);
+  }
+
+  @Override
+  public void cancelOrder(String orderId) {
+    orderDao.updateStatus(orderId, OrderStatus.CANCEL);
   }
 }

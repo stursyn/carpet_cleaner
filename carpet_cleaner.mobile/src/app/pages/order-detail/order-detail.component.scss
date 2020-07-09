@@ -1,0 +1,8 @@
+.my-custom-class {
+  --backdrop-opacity: 0.8 !important;
+
+  .modal-wrapper {
+    --height: 40% !important;
+    position: absolute;
+  }
+}

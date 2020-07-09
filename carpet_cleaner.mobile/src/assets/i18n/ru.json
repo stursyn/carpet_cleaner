@@ -34,5 +34,11 @@
   "merchantHeight": "Высота",
   "map": "Карта",
   "needToDeliver": "Надо доставить",
-  "needToPickUp": "Надо забрать"
+  "needToPickUp": "Надо забрать",
+  "fio": "ФИО",
+  "details": "Данные заказа",
+  "pickUpDateDisplay": "Дата вывоза товара",
+  "delivered": "Доставлено",
+  "finishOrder": "Завершить заказ",
+  "cancelOrder": "Отменить заказ"
 }

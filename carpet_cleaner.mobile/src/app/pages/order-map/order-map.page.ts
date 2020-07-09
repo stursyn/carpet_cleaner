@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {OrderShortRecord} from "../models/OrderShortRecord";
-import {DeliverService} from "../services/deliver.service";
-import {OrderRouteWay} from "../models/OrderRouteWay";
+import {OrderShortRecord} from "../../models/OrderShortRecord";
+import {DeliverService} from "../../services/deliver.service";
+import {OrderRouteWay} from "../../models/OrderRouteWay";
 import {ILoadEvent} from "angular8-yandex-maps";
+import {NavigationService} from "../../services/navigation.service";
 
 @Component({
   selector: 'app-order-map',
@@ -17,8 +18,12 @@ export class OrderMapPage implements OnInit {
   routeList: OrderRouteWay[];
   myLocation = [51.128207, 71.430411];
 
-  constructor(private deliverService:DeliverService) {
-
+  constructor(private deliverService:DeliverService,
+              private navigationService:NavigationService) {
+    this.navigationService.orderMapRefreshObservable
+      .subscribe(value => {
+        if(value) this.loadData();
+      });
   }
 
   ngOnInit() {

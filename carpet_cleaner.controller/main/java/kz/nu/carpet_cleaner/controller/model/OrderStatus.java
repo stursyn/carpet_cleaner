@@ -5,5 +5,6 @@ public enum OrderStatus {
   PICKED_UP,
   WASHING,
   TO_DELIVER,
+  CANCEL,
   DELIVERED;
 }

@@ -21,6 +21,14 @@
         latitude numeric
       );;
 
+      create table employee (
+        id varchar(100) not null primary key,
+        name varchar(255),
+        surname varchar(255),
+        patronymic varchar(255),
+        deviceId varchar(100)
+      );;
+
       create table clean_order (
         id varchar(100) not null primary key,
         customerId varchar(100) references customer(id),
@@ -30,7 +38,11 @@
         pickUpDate timestamp,
         deliveryDate timestamp,
         cleanStatus varchar(30),
-        totalOrderPrice numeric
+        totalOrderPrice numeric,
+        assignedToPickUp varchar(100) references employee(id),
+        assignedToDeliver varchar(100) references employee(id),
+        pickedUpBy varchar(100) references employee(id),
+        deliveredBy varchar(100) references employee(id)
       );;
 
       create table application_dict (
@@ -52,7 +64,9 @@
         merchantType varchar(100) references application_dict(code),
         merchantMaterial varchar(100) references application_dict(code),
         merchantMeasurement varchar(100) references application_dict(code),
-        serviceType varchar(100) references application_dict(code),
+        merchantService varchar(100) references application_dict(code),
+        merchantWidth numeric,
+        merchantHeight numeric,
         servicePrice numeric
       );;
 
@@ -62,6 +76,10 @@
 
   <changeSet author="stursyn" id="fill_dictionary">
     <sql endDelimiter=";;"><![CDATA[
+      insert into employee (id,name,surname,patronymic)
+      values
+        ('employee1', 'Seiit', 'Tursyn', 'Nurmuhanbetuly');;
+
       insert into application_dict(code, title, dictType)
       values
         ('count1', '1', 'MERCHANT_COUNT'),

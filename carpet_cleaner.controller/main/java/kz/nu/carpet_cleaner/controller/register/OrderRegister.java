@@ -1,5 +1,6 @@
 package kz.nu.carpet_cleaner.controller.register;
 
+import kz.nu.carpet_cleaner.controller.model.OrderFullRecord;
 import kz.nu.carpet_cleaner.controller.model.OrderRecord;
 import kz.nu.carpet_cleaner.controller.model.OrderShortRecord;
 
@@ -12,4 +13,12 @@ public interface OrderRegister {
   String getNextOrderNumber();
 
   List<OrderShortRecord> orderByStatus(String orderStatus);
+
+  OrderFullRecord orderDetail(String orderId);
+
+  void orderMoveStage(String orderId);
+
+  Integer doneOrderCount(String orderStatus);
+
+  void cancelOrder(String orderId);
 }

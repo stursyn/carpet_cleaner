@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{'orders'|translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="list-avatar-page">
+  <ion-refresher pullFactor="1.5" class="refresher-content ion-align-items-start" slot="fixed" (ionRefresh)="doRefresh($event)" >
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-item-group *ngIf="needToDeliverOrderList?.length>0">
+    <ion-item-divider>
+      <ion-label>{{'needToDeliver'|translate}} ({{deliveredCount}}/{{needToDeliverOrderList?.length}})</ion-label>
+    </ion-item-divider>
+
+    <ion-item detail="true" button="true" (click)='showOrderDetail(item.id, false)' *ngFor="let item of needToDeliverOrderList" >
+        <ion-label>
+          <h2>{{item.displayTitle}}</h2>
+          <p>{{item.description}}</p>
+          <ion-note item-end>{{item.price}}</ion-note>
+        </ion-label>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group *ngIf="needToPickUpOrderList?.length>0">
+    <ion-item-divider>
+      <ion-label>{{'needToPickUp' | translate}} ({{pickedUpCount}}/{{needToPickUpOrderList?.length}})</ion-label>
+    </ion-item-divider>
+
+    <ion-item detail="true" *ngFor="let item of needToPickUpOrderList" (click)="showOrderDetail(item.id, true)">
+      <ion-label>
+        <h2>{{item.displayTitle}}</h2>
+        <p>{{item.description}}</p>
+        <ion-note item-end>{{item.price}}</ion-note>
+      </ion-label>
+    </ion-item>
+  </ion-item-group>
+</ion-content>

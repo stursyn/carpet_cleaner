@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/carpet_cleaner.register/build/libs/exploded/api_null.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$">
-        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpJbXBsZW1lbnRhdGlvbi1UaXRsZTogY2FycGV0X2NsZWFuZXIucmVnaXN0ZXINCkltcGxlbWVudGF0aW9uLVZlcnNpb246IDEuMA0KSW1wbGVtZW50YXRpb24tVmVuZG9yOiBudQ0KQ3JlYXRlZC1CeTogc2VpaXQNCkNyZWF0ZWQtQXQ6IDIwMjAtMDctMDcvMTY6MDM6MDENCg0K</manifest>
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpJbXBsZW1lbnRhdGlvbi1UaXRsZTogY2FycGV0X2NsZWFuZXIucmVnaXN0ZXINCkltcGxlbWVudGF0aW9uLVZlcnNpb246IDEuMA0KSW1wbGVtZW50YXRpb24tVmVuZG9yOiBudQ0KQ3JlYXRlZC1CeTogc2VpaXQNCkNyZWF0ZWQtQXQ6IDIwMjAtMDctMDkvMDA6MTk6NTUNCg0K</manifest>
       </options>
     </properties>
     <root id="root">
