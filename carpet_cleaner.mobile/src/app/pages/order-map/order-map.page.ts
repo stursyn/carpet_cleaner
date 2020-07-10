@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {OrderShortRecord} from "../../models/OrderShortRecord";
 import {DeliverService} from "../../services/deliver.service";
 import {OrderRouteWay} from "../../models/OrderRouteWay";
-import {ILoadEvent} from "angular8-yandex-maps";
 import {NavigationService} from "../../services/navigation.service";
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 @Component({
   selector: 'app-order-map',
@@ -19,10 +19,23 @@ export class OrderMapPage implements OnInit {
   myLocation = [51.128207, 71.430411];
 
   constructor(private deliverService:DeliverService,
-              private navigationService:NavigationService) {
+              private navigationService:NavigationService,
+              private geolocation:Geolocation,
+              private changeDetector : ChangeDetectorRef) {
     this.navigationService.orderMapRefreshObservable
       .subscribe(value => {
         if(value) this.loadData();
+      });
+
+    this.geolocation.getCurrentPosition()
+      .then( resp=>{
+        let geo = [];
+        geo.push(resp.coords.latitude);
+        geo.push(resp.coords.longitude);
+        this.myLocation = geo;
+        this.changeDetector.detectChanges();
+      }, error => {
+        console.error(error);
       });
   }
 
@@ -45,6 +58,7 @@ export class OrderMapPage implements OnInit {
           referencePoint.push([value.latitude, value.longitude]);
 
           this.routeList.push(new OrderRouteWay({ referencePoints: referencePoint}));
+          this.changeDetector.detectChanges();
         });
       });
     this.deliverService.loadOrderByStatus("TO_DELIVER")
@@ -56,19 +70,9 @@ export class OrderMapPage implements OnInit {
           referencePoint.push([value.latitude, value.longitude]);
 
           this.routeList.push(new OrderRouteWay({ referencePoints: referencePoint}));
+          this.changeDetector.detectChanges();
         });
       });
 
-  }
-
-  mapLoad(event:ILoadEvent) {
-    let ymaps = event.ymaps;
-    ymaps.geolocation.get({
-      provider: 'yandex',
-      autoReverseGeocode: true
-    }).then(res=> {
-        this.myLocation = res.geoObjects.get(0).geometry._coordinates;
-      }
-    );
   }
 }

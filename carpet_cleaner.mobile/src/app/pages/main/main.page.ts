@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NavigationService} from "../../services/navigation.service";
 
 @Component({
@@ -6,7 +6,7 @@ import {NavigationService} from "../../services/navigation.service";
   templateUrl: 'main.page.html',
   styleUrls: ['main.page.scss']
 })
-export class MainPage {
+export class MainPage{
 
   constructor(private navigationService:NavigationService) {
 

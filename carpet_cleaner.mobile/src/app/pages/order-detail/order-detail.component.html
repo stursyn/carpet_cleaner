@@ -85,9 +85,7 @@
     </ion-row>
 
     <ion-item-group>
-      <ion-item-divider>
-        <ion-label>{{'merchants'|translate}}</ion-label>
-      </ion-item-divider>
+      <ion-list-header>{{'merchants'|translate}}</ion-list-header>
       <div *ngFor="let merchant of order.merchantList">
         <ion-grid>
           <ion-row>
@@ -176,7 +174,7 @@
               </ion-col>
             </ion-row>
           </div>
-          <ion-item-divider>
+          <ion-item-divider class="merchant-item-divider">
           </ion-item-divider>
         </ion-grid>
       </div>

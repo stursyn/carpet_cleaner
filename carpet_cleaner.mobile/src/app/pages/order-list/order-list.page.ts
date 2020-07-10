@@ -1,32 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {OrderShortRecord} from "../../models/OrderShortRecord";
 import {DeliverService} from "../../services/deliver.service";
 import {NavigationService} from "../../services/navigation.service";
 import {ModalController} from "@ionic/angular";
 import {OrderDetailComponent} from "../order-detail/order-detail.component";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-order-list',
   templateUrl: './order-list.page.html',
   styleUrls: ['./order-list.page.scss'],
 })
-export class OrderListPage implements OnInit {
+export class OrderListPage implements OnInit, OnDestroy {
   needToDeliverOrderList: OrderShortRecord[];
   needToPickUpOrderList: OrderShortRecord[];
   pickedUpCount: number = 0;
   deliveredCount: number = 0;
-
+  subscription:Subscription;
   constructor(private deliverService:DeliverService,
               private navigationService:NavigationService,
               private modalController:ModalController) {
-    this.navigationService.orderListRefreshObservable
+    this.subscription = this.navigationService.orderListRefreshObservable
       .subscribe(value => {
+        console.log(value);
         if(value) this.loadData();
-      })
+      });
   }
 
   ngOnInit() {
-    this.loadData()
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
   loadData(action = null) {
@@ -80,4 +85,5 @@ export class OrderListPage implements OnInit {
   doRefresh(event) {
     this.loadData(event.target)
   }
+
 }

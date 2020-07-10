@@ -14,11 +14,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'main',
     pathMatch: 'full'
-  },
-  {
-    path: 'done-orders',
-    loadChildren: () => import('./pages/done-orders/done-orders.module').then( m => m.DoneOrdersPageModule)
-  },
+  }
 ];
 @NgModule({
   imports: [

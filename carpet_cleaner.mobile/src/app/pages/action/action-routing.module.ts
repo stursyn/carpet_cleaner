@@ -14,6 +14,11 @@ const routes: Routes = [
           .then(m => m.DoneOrdersPageModule)
       },
       {
+        path: 'order-add',
+        loadChildren: () => import('../order-add/order-add.module')
+          .then(m => m.OrderAddPageModule)
+      },
+      {
         path: '',
         redirectTo: '/actions/done-orders'
       },

@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
         },
         {
           title : 'addNewOrder',
-          url   : "/main/order-map",
+          url   : "/actions/order-add",
           iconSrc  :  "assets/order-add.svg",
           icon : null
         }

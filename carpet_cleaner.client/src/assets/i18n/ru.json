@@ -31,5 +31,8 @@
   "newOrder": "Новый заказ",
   "clientNotFound": "Клиент не найден",
   "merchantWidth": "Ширина",
-  "merchantHeight": "Высота"
+  "merchantHeight": "Высота",
+  "delete": "Удалить",
+  "save": "Сохранить",
+  "cancel": "Отменить"
 }

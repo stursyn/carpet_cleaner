@@ -39,4 +39,10 @@ export class DeliverService {
     return this.api.get(endPoint, {orderId: orderId}).toPromise()
       .then(res => res);
   }
+
+  saveNewOrder(toSave:any) {
+    let endPoint = this.apiPoint + "/saveOrder";
+    return this.api.post(endPoint,toSave).toPromise()
+      .then(res=>res);
+  }
 }

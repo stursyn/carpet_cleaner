@@ -17,6 +17,9 @@ public class DeliverController {
   @Autowired
   private OrderRegister register;
 
+  @Autowired
+  private OperatorRegister operatorRegister;
+
   @GetMapping("orderByStatus")
   public List<OrderShortRecord> orderByStatus(@RequestParam("orderStatus") String orderStatus) {
     return register.orderByStatus(orderStatus);
@@ -42,5 +45,11 @@ public class DeliverController {
   @GetMapping("doneOrderCount")
   public Integer doneOrderCount(@RequestParam("orderStatus") String orderStatus) {
     return register.doneOrderCount(orderStatus);
+  }
+
+  @PostMapping("saveOrder")
+  public void saveOrder(@RequestBody OperatorOrderToSave toSave) {
+    operatorRegister.saveOrder(toSave);
+    return;
   }
 }

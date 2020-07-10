@@ -1,15 +1,15 @@
 import {Injectable} from "@angular/core";
 import {ApiService} from "./api.service";
-import {BehaviorSubject} from "rxjs";
+import {BehaviorSubject, ReplaySubject, Subject} from "rxjs";
 
 @Injectable({
     providedIn: "root"
 })
 export class NavigationService {
-  private orderListRefresh = new BehaviorSubject(false);
+  private orderListRefresh = new Subject();
   orderListRefreshObservable = this.orderListRefresh.asObservable();
 
-  private orderMapRefresh = new BehaviorSubject(false);
+  private orderMapRefresh = new Subject();
   orderMapRefreshObservable = this.orderMapRefresh.asObservable();
 
   constructor(){}

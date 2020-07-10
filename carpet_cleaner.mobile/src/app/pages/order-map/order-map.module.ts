@@ -9,6 +9,7 @@ import { OrderMapPageRoutingModule } from './order-map-routing.module';
 import { OrderMapPage } from './order-map.page';
 import {AngularYandexMapsModule} from "angular8-yandex-maps";
 import {TranslateModule} from "@ngx-translate/core";
+import {Geolocation} from "@ionic-native/geolocation/ngx";
 
 @NgModule({
   imports: [
@@ -20,6 +21,9 @@ import {TranslateModule} from "@ngx-translate/core";
     TranslateModule,
   ],
   declarations: [OrderMapPage],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [
+    Geolocation
+  ]
 })
 export class OrderMapPageModule {}

@@ -128,6 +128,5 @@ export class OrderComponent implements OnInit {
       this.pickUpAddress.latitude = addressModel.resultCoordinates[0];
       this.pickUpAddress.longitude = addressModel.resultCoordinates[1];
     }
-    console.log(this.pickUpAddress);
   }
 }

@@ -8,8 +8,8 @@
 </ion-header>
 
 <ion-content>
-  <angular-yandex-map [center]="[51.128207, 71.430411 ]" [zoom]="15"
-                      [state]="{ controls: ['zoomControl'] }" (load)="mapLoad($event)">
+  <angular-yandex-map [center]="myLocation" [zoom]="15"
+                      [state]="{ controls: ['zoomControl'] }">
     <angular-yandex-multiroute [(referencePoints)]="item.referencePoints" *ngFor="let item of routeList"></angular-yandex-multiroute>
   </angular-yandex-map>
 </ion-content>
