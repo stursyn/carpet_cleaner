@@ -6,7 +6,6 @@ import kz.nu.carpet_cleaner.controller.register.AuthRegister;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = {"http://localhost:5002"}, allowCredentials = "true")
 @RestController
 @RequestMapping("auth")
 public class AuthController {

@@ -7,6 +7,7 @@ export class OrderRecord {
   pickUpDate:Date;
   merchantList: MerchantToSaveRecord[];
   pickUpAddress: AddressRecord;
+  totalPrice: number = 0;
 
   public constructor(init?: Partial<OrderRecord>) {
     Object.assign(this, init);

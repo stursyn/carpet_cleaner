@@ -8,6 +8,8 @@ export class MerchantRecord {
   showSize:boolean = false;
   width:number;
   height:number;
+  extraService:string;
+  sale:string;
 
   constructor() {}
 }

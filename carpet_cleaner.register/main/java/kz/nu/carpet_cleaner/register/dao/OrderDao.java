@@ -18,7 +18,7 @@ public interface OrderDao {
       " on conflict (id) do nothing")
   void saveOrder(@Param("toSave") OrderRecord toSave);
 
-  @Select("select x.id, x1.surname, x1.name, x1.patronymic, x1.phoneNumber," +
+  @Select("select x.id, x.totalPrice, x1.surname, x1.name, x1.patronymic, x1.phoneNumber," +
       " case when 'CREATED' = x.cleanStatus then x2.displayAddress else x3.displayAddress end, " +
       " case when 'CREATED' = x.cleanStatus then x2.latitude else x3.latitude end, " +
       " case when 'CREATED' = x.cleanStatus then x2.longitude else x3.longitude end " +
@@ -30,14 +30,16 @@ public interface OrderDao {
       "     or (x.cleanStatus = #{orderStatus} and x.deliveryDate::date  = current_date and x.cleanStatus in ('TO_DELIVER','DELIVERED'))")
   List<OrderDetailData> loadOrderByStatus(@Param("orderStatus") String orderStatus);
 
-  @Select("select x.number, x1.surname, x1.name, x1.patronymic, x1.phoneNumber as customerPhoneNumber, x2.displayAddress as pickUpAddress, x.pickUpDate" +
+  @Select("select x.number, x.totalPrice as price, x1.surname, x1.name, x1.patronymic, x1.phoneNumber as customerPhoneNumber, " +
+      " x2.displayAddress as pickUpAddress, x.pickUpDate" +
       " from clean_order x " +
       " inner join customer x1 on x1.id = x.customerId " +
       " left join customer_address x2 on x2.id = x.pickUpAddress " +
       " where x.id = #{orderId}")
   OrderFullRecord loadOrderFullDisplayRecord(@Param("orderId") String orderId);
 
-  @Select("select x1.title as service, x2.title as type, x3.title as count, x4.title as material, x5.title as measurement, x.merchantWidth as width, x.merchantHeight as height, x5.code = 'measurement2' as showSize" +
+  @Select("select x1.title as service, x2.title as type, x3.title as count, x4.title as material, x5.title as measurement, x.merchantWidth as width," +
+      " x.merchantHeight as height, x5.code = 'measurement2' as showSize, x6.title as extraService, x7.title as sale " +
       " from clean_service x " +
       " left join application_dict x1 on x1.code = x.merchantService and x1.dictType = 'MERCHANT_SERVICE'" +
       " left join application_dict x2 on x2.code = x.merchantType and x2.dictType = 'MERCHANT_TYPE'" +

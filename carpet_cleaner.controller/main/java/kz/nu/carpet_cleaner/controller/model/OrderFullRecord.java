@@ -1,5 +1,6 @@
 package kz.nu.carpet_cleaner.controller.model;
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,6 +19,7 @@ public class OrderFullRecord {
   public String pickUpAddress;
   public String pickUpDateDisplay;
   public Date pickUpDate;
+  public BigDecimal price;
   public List<MerchantDisplayRecord> merchantList = new ArrayList<>();
 
   public void formatData() {

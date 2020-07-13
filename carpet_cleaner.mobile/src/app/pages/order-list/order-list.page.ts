@@ -86,4 +86,7 @@ export class OrderListPage implements OnInit, OnDestroy {
     this.loadData(event.target)
   }
 
+  login(form: any) {
+
+  }
 }

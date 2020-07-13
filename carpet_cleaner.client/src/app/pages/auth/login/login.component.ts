@@ -22,9 +22,6 @@ export class LoginComponent implements OnInit {
               @Inject(NB_AUTH_OPTIONS) protected options = {},
               protected cd: ChangeDetectorRef,
               protected router: Router) {
-
-    console.log(this.authService.currentUserValue);
-
     if (this.authService.currentUserValue) {
       this.router.navigate(['/operator/startPage'], {relativeTo:this.route.root});
     }

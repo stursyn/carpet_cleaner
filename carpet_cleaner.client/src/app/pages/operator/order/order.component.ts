@@ -100,20 +100,6 @@ export class OrderComponent implements OnInit {
     this.merchantList.splice(i,1);
   }
 
-  loadBasePrice(merchantRecord:MerchantRecord) {
-    if(merchantRecord && merchantRecord.merchantService
-      && merchantRecord.merchantType && merchantRecord.merchantMaterial
-      && merchantRecord.merchantMeasurement) {
-      this.orderService.loadPrice({ type: merchantRecord.merchantType, service:merchantRecord.merchantService,
-        material:merchantRecord.merchantMaterial, measurement:merchantRecord.merchantMeasurement})
-        .then(res => {
-          merchantRecord.basePrice = res;
-          this.recalculatePrice(merchantRecord);
-        });
-
-    }
-  }
-
   routeToStartPage() {
     this.router.navigate(['start-page'],{relativeTo: this.route.parent})
   }
@@ -150,6 +136,20 @@ export class OrderComponent implements OnInit {
     if(addressModel.resultCoordinates) {
       this.pickUpAddress.latitude = addressModel.resultCoordinates[0];
       this.pickUpAddress.longitude = addressModel.resultCoordinates[1];
+    }
+  }
+
+  loadBasePrice(merchantRecord:MerchantRecord) {
+    if(merchantRecord && merchantRecord.merchantService
+      && merchantRecord.merchantType && merchantRecord.merchantMaterial
+      && merchantRecord.merchantMeasurement) {
+      this.orderService.loadPrice({ type: merchantRecord.merchantType, service:merchantRecord.merchantService,
+        material:merchantRecord.merchantMaterial, measurement:merchantRecord.merchantMeasurement})
+        .then(res => {
+          merchantRecord.basePrice = res;
+          this.recalculatePrice(merchantRecord);
+        });
+
     }
   }
 

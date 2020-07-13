@@ -64,7 +64,7 @@ public class OrderRegisterImpl implements OrderRegister {
     orderDetailData.forEach(orderData ->
       ret.add(OrderShortRecord.of( orderData.id, nvl(orderData.surname, false) + nvl(orderData.name, false)
           + nvl(orderData.patronymic, true), "Телефон: " + orderData.phoneNumber + " \n Адрес: " + orderData.displayAddress,
-          orderData.latitude, orderData.longitude)));
+          orderData.latitude, orderData.longitude, orderData.totalPrice)));
     return ret;
   }
 

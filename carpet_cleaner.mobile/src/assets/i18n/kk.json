@@ -48,5 +48,17 @@
   "delete": "Удалить",
   "save": "Сохранить",
   "cancel": "Отменить",
-  "deleteMerchant":"Удалить товар"
+  "deleteMerchant":"Удалить товар",
+  "enter": "Вход",
+  "login": "Логин",
+  "error": "Ошибка",
+  "username": "Пользователь",
+  "password": "Пароль",
+  "field-required": "Заполните поле",
+  "password-restriction": "Пароль должен содержать не менее {minLength} и не более {maxLength} символов",
+  "Invalid user credentials": "Неверные учетные данные пользователя",
+  "logout": "Выход",
+  "orderPrice": "Цена",
+  "merchantExtraService": "Дополнительная услуга",
+  "sale": "Скидка"
 }

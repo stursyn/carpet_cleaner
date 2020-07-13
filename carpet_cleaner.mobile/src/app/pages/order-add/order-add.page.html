@@ -36,6 +36,10 @@
     <ion-input  readonly="true" [(ngModel)]="order.number"  id="orderNumber"></ion-input>
   </ion-item>
   <ion-item lines="inset">
+    <ion-label class="input-ion-item" position="floating"><p>{{'orderPrice'|translate}}</p></ion-label>
+    <ion-input  readonly="true" [(ngModel)]="order.totalPrice"  id="orderPrice"></ion-input>
+  </ion-item>
+  <ion-item lines="inset">
     <ion-label class="input-ion-item" position="floating"><p>{{'pickUpDate'|translate}}</p></ion-label>
     <ion-datetime [(ngModel)]="order.pickUpDate"  id="pickUpDate"></ion-datetime>
   </ion-item>
@@ -64,44 +68,69 @@
   <div *ngFor="let merchant of merchantList; let i = index">
     <ion-item lines="inset">
       <ion-label class="input-ion-item" position="floating"><p>{{'merchantService'|translate}}</p></ion-label>
-      <ion-select [(ngModel)]="merchant.merchantService" interface="action-sheet" id="merchantService">
+      <ion-select [(ngModel)]="merchant.merchantService" interface="action-sheet" id="merchantService"
+                  (ionChange)="loadBasePrice(merchant)"
+                  (ngModelChange)="recalculatePrice(merchant)">
         <ion-select-option *ngFor="let dict of merchantServiceOption" [value]="dict.value">{{dict.title}}</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item lines="inset">
       <ion-label class="input-ion-item" position="floating"><p>{{'merchantType'|translate}}</p></ion-label>
-      <ion-select [(ngModel)]="merchant.merchantType"  interface="action-sheet" id="merchantType">
+      <ion-select [(ngModel)]="merchant.merchantType"  interface="action-sheet" id="merchantType"
+                  (ionChange)="loadBasePrice(merchant)"
+                  (ngModelChange)="recalculatePrice(merchant)">
         <ion-select-option *ngFor="let dict of merchantTypeOption" [value]="dict.value">{{dict.title}}</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item lines="inset">
       <ion-label class="input-ion-item" position="floating"><p>{{'merchantMaterial'|translate}}</p></ion-label>
-      <ion-select [(ngModel)]="merchant.merchantMaterial"  interface="action-sheet" id="merchantMaterial">
+      <ion-select [(ngModel)]="merchant.merchantMaterial"  interface="action-sheet" id="merchantMaterial"
+                  (ionChange)="loadBasePrice(merchant)"
+                  (ngModelChange)="recalculatePrice(merchant)">
         <ion-select-option *ngFor="let dict of merchantMaterialOption" [value]="dict.value">{{dict.title}}</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item lines="inset">
-      <ion-label class="input-ion-item" position="floating"><p>{{'merchantCount'|translate}}</p></ion-label>
-      <ion-select [(ngModel)]="merchant.merchantCount"  interface="action-sheet" id="merchantCount">
-        <ion-select-option *ngFor="let dict of merchantCountOption" [value]="dict.value">{{dict.title}}</ion-select-option>
-      </ion-select>
-    </ion-item>
-    <ion-item lines="inset">
       <ion-label class="input-ion-item" position="floating"><p>{{'merchantMeasurement'|translate}}</p></ion-label>
-      <ion-select [(ngModel)]="merchant.merchantMeasurement"  interface="action-sheet" id="merchantMeasurement">
+      <ion-select [(ngModel)]="merchant.merchantMeasurement"  interface="action-sheet" id="merchantMeasurement"
+                  (ionChange)="loadBasePrice(merchant)"
+                  (ngModelChange)="recalculatePrice(merchant)">
         <ion-select-option *ngFor="let dict of merchantMeasurementOption" [value]="dict.value">{{dict.title}}</ion-select-option>
       </ion-select>
     </ion-item>
     <div *ngIf="merchant.merchantMeasurement == 'measurement2'">
       <ion-item lines="inset">
         <ion-label class="input-ion-item" position="floating"><p>{{'merchantWidth'|translate}}</p></ion-label>
-        <ion-input type="number" [(ngModel)]="merchant.merchantWidth" id="merchantWidth"></ion-input>
+        <ion-input type="number" [(ngModel)]="merchant.merchantWidth" id="merchantWidth"
+                   (ngModelChange)="recalculatePrice(merchant)"></ion-input>
       </ion-item>
       <ion-item lines="inset">
         <ion-label class="input-ion-item" position="floating"><p>{{'merchantHeight'|translate}}</p></ion-label>
-        <ion-input type="number" [(ngModel)]="merchant.merchantHeight" id="merchantHeight"></ion-input>
+        <ion-input type="number" [(ngModel)]="merchant.merchantHeight" id="merchantHeight"
+                   (ngModelChange)="recalculatePrice(merchant)"></ion-input>
       </ion-item>
     </div>
+    <ion-item lines="inset">
+      <ion-label class="input-ion-item" position="floating"><p>{{'merchantCount'|translate}}</p></ion-label>
+      <ion-select [(ngModel)]="merchant.merchantCount"  interface="action-sheet" id="merchantCount"
+                  (ngModelChange)="recalculatePrice(merchant)">
+        <ion-select-option *ngFor="let dict of merchantCountOption" [value]="dict.value">{{dict.title}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item lines="inset">
+      <ion-label class="input-ion-item" position="floating"><p>{{'merchantExtraService'|translate}}</p></ion-label>
+      <ion-select [(ngModel)]="merchant.merchantExtraService"  interface="action-sheet" id="merchantExtraService"
+                  (ngModelChange)="recalculatePrice(merchant)">
+        <ion-select-option *ngFor="let dict of merchantExtraServiceOption" [value]="dict.value">{{dict.title}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item lines="inset">
+      <ion-label class="input-ion-item" position="floating"><p>{{'sale'|translate}}</p></ion-label>
+      <ion-select [(ngModel)]="merchant.merchantSale"  interface="action-sheet" id="merchantSale"
+                  (ngModelChange)="recalculatePrice(merchant)">
+        <ion-select-option *ngFor="let dict of merchantSaleOption" [value]="dict.value">{{dict.title}}</ion-select-option>
+      </ion-select>
+    </ion-item>
     <div *ngIf="merchantList.length>1">
       <ion-button expand="full" fill="outline" shape="round" (click)="deleteMerchant(i)">{{'deleteMerchant'|translate}}</ion-button>
     </div>

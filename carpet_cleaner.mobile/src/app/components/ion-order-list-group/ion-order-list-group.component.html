@@ -3,11 +3,11 @@
     <ion-label>{{itemGroupTitle|translate}} {{getCount()}}</ion-label>
   </ion-item-divider>
 
-  <ion-item detail="{{itemIsDetail}}" button="{{itemIsButton}}" (click)='itemClick(item.id)' *ngFor="let item of orderList" >
+  <ion-item detail="false" button="{{itemIsButton}}" (click)='itemClick(item.id)' *ngFor="let item of orderList" >
     <ion-label>
       <h2>{{item.displayTitle}}</h2>
       <p>{{item.description}}</p>
-      <ion-note item-end>{{item.price}}</ion-note>
     </ion-label>
+    <ion-note slot="end" color="primary"><p>{{item.price}} тг.</p></ion-note>
   </ion-item>
 </ion-item-group>

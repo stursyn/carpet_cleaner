@@ -7,7 +7,10 @@ export class MerchantToSaveRecord {
   public merchantMeasurement:string;
   public merchantWidth:number;
   public merchantHeight:number;
+  public merchantExtraService:string;
+  public merchantSale:string;
   public merchantPrice:number;
+  public basePrice: number = 0;
 
   constructor() {}
 }

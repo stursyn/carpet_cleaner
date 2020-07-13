@@ -12,4 +12,5 @@ public class OrderDetailData {
   public BigDecimal latitude;
   public BigDecimal longitude;
   public String phoneNumber;
+  public BigDecimal totalPrice;
 }

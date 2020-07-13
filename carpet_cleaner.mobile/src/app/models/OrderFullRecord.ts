@@ -7,6 +7,7 @@ export class OrderFullRecord {
   customerPhoneNumber:string;
   pickUpAddress:string;
   pickUpDateDisplay:string;
+  price:number;
   merchantList:MerchantRecord[];
 
   constructor() {
