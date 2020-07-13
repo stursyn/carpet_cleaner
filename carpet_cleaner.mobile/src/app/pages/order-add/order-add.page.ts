@@ -146,7 +146,6 @@ export class OrderAddPage implements OnInit {
   }
 
   loadBasePrice(merchantRecord:MerchantToSaveRecord) {
-    console.log("keldy");
     if(merchantRecord && merchantRecord.merchantService
       && merchantRecord.merchantType && merchantRecord.merchantMaterial
       && merchantRecord.merchantMeasurement) {

@@ -19,7 +19,7 @@
               <ion-input name="password" type="password" placeholder="{{'textEnter'|translate}}" ngModel required></ion-input>
             </ion-item>
             <ion-item *ngIf="error">
-              <ion-label class="label error-label">{{error|translate}}</ion-label>
+              <ion-label color="warning">{{error|translate}}</ion-label>
             </ion-item>
           </div>
           <div padding>
