@@ -21,4 +21,7 @@ public interface OrderRegister {
   Integer doneOrderCount(String orderStatus);
 
   void cancelOrder(String orderId);
+
+  Double getPrice(String service, String type, String material, String measurement);
+
 }

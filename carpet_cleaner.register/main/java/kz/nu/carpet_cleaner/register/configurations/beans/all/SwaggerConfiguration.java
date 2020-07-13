@@ -30,7 +30,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
 
 
   private ApiInfo apiInfo() {
-    return new ApiInfo("Service Bus REST API", "REST API for AIX Service Bus",
+    return new ApiInfo("Carpet Cleaner REST API", "REST API for Carpet Cleaner",
                        ApplicationInfo.appVersion(),
                        "",
                        null, "",

@@ -12,7 +12,6 @@ import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {
-  NbChatModule,
   NbDatepickerModule,
   NbDialogModule,
   NbMenuModule,
@@ -26,7 +25,8 @@ import {ErrorInterceptor} from "./providers/interceptors/error.interceptor";
 import {AngularYandexMapsModule, IConfig, YA_MAP_CONFIG} from "angular8-yandex-maps";
 import {NgxMaskModule, IConfig as NGXIConfig} from "ngx-mask";
 import {NbDateFnsDateModule} from "@nebular/date-fns";
-import {kk} from "date-fns/locale"
+import {kk} from "date-fns/locale";
+import {KeycloakInterceptor} from "./providers/interceptors/keycloak.interceptor";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -67,14 +67,12 @@ const maskConfig: Partial<NGXIConfig> = {
     NbDialogModule.forRoot(),
     NbWindowModule.forRoot(),
     NbToastrModule.forRoot(),
-    NbChatModule.forRoot({
-      messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
-    }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+    { provide: HTTP_INTERCEPTORS, useClass: KeycloakInterceptor, multi: true},
     { provide: YA_MAP_CONFIG, useValue: mapKey}
   ],
   bootstrap: [AppComponent],

@@ -14,5 +14,5 @@ public class OrderRecord {
   public Date pickUpDate;
   public Date deliveryDate;
   public OrderStatus cleanStatus;
-  public BigDecimal totalOrderPrice;
+  public BigDecimal totalPrice;
 }

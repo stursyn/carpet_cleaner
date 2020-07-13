@@ -13,7 +13,7 @@ public class ApiError {
 
   public static ApiError of(Response<String> response) {
     var apiError = new ApiError();
-    apiError.body = response.body.replaceAll("\n", "").replaceAll("\t", "");
+    apiError.body = response.body==null?null:response.body.replaceAll("\n", "").replaceAll("\t", "");
     apiError.status = response.status;
     apiError.url = response.url;
     return apiError;

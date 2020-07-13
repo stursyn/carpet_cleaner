@@ -13,8 +13,8 @@ public interface OrderDao {
   @Select("SELECT nextval('s_order_number')")
   long loadSeqOrderNumber();
 
-  @Insert("insert into clean_order(id, customerId, pickUpAddress, deliveryAddress, pickUpDate, deliveryDate, cleanStatus, totalOrderPrice, number) " +
-      " values (#{toSave.id}, #{toSave.customerId}, #{toSave.pickUpAddress.id}, #{toSave.pickUpAddress.id}, #{toSave.pickUpDate}, #{toSave.deliveryDate}, #{toSave.cleanStatus}, #{toSave.totalOrderPrice}, #{toSave.number})" +
+  @Insert("insert into clean_order(id, customerId, pickUpAddress, deliveryAddress, pickUpDate, deliveryDate, cleanStatus, totalPrice, number) " +
+      " values (#{toSave.id}, #{toSave.customerId}, #{toSave.pickUpAddress.id}, #{toSave.pickUpAddress.id}, #{toSave.pickUpDate}, #{toSave.deliveryDate}, #{toSave.cleanStatus}, #{toSave.totalPrice}, #{toSave.number})" +
       " on conflict (id) do nothing")
   void saveOrder(@Param("toSave") OrderRecord toSave);
 
@@ -44,6 +44,8 @@ public interface OrderDao {
       " left join application_dict x3 on x3.code = x.merchantCount and x3.dictType = 'MERCHANT_COUNT'" +
       " left join application_dict x4 on x4.code = x.merchantMaterial and x4.dictType = 'MERCHANT_MATERIAL'" +
       " left join application_dict x5 on x5.code = x.merchantMeasurement and x5.dictType = 'MERCHANT_MEASUREMENT'" +
+      " left join application_dict x6 on x6.code = x.merchantExtraService and x6.dictType = 'MERCHANT_EXTRA_SERVICE'" +
+      " left join application_dict x7 on x7.code = x.merchantSale and x7.dictType = 'MERCHANT_SALE'" +
       " where x.cleanOrderId = #{orderId}")
   List<MerchantDisplayRecord> loadMerchantDisplayRecordList(@Param("orderId") String orderId);
 
@@ -57,4 +59,10 @@ public interface OrderDao {
       " where (x.cleanStatus = #{orderStatus} and x.pickUpDate::date  = current_date and 'PICKED_UP' = #{orderStatus})" +
       " or (x.cleanStatus = #{orderStatus} and x.deliveryDate::date  = current_date and 'DELIVERED' = #{orderStatus})")
   Integer loadDoneOrderForToday(@Param("orderStatus") String orderStatus);
+
+  @Select("select price from price_list where merService = #{service} and merType = #{type} and merMaterial = #{material} and merMeasurement = #{measurement}")
+  Double loadPrice(@Param("service") String service,
+                   @Param("type") String type,
+                   @Param("material") String material,
+                   @Param("measurement") String measurement);
 }

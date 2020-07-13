@@ -17,4 +17,12 @@ public class OrderController {
   public ResponseEntity<StringResponse> getNextNumber() {
     return ResponseEntity.ok(StringResponse.of(register.getNextOrderNumber()));
   }
+
+  @GetMapping("price")
+  public Double price(@RequestParam("service") String service,
+                                     @RequestParam("type") String type,
+                                     @RequestParam("material") String material,
+                                     @RequestParam("measurement") String measurement) {
+    return register.getPrice(service, type, material, measurement);
+  }
 }

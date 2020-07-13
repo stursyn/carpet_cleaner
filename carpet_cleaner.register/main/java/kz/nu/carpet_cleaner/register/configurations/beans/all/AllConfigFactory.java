@@ -5,6 +5,7 @@ import kz.nu.carpet_cleaner.register.hotconfig.DbConfig;
 import kz.greetgo.conf.hot.FileConfigFactory;
 import kz.nu.carpet_cleaner.controller.AppFolderPath;
 import kz.nu.carpet_cleaner.register.hotconfig.EmailSenderConfig;
+import kz.nu.carpet_cleaner.register.hotconfig.KeycloakInServiceConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -26,5 +27,10 @@ public class AllConfigFactory extends FileConfigFactory {
   @Bean
   public EmailSenderConfig createEmailSenderConfig() {
     return createConfig(EmailSenderConfig.class);
+  }
+
+  @Bean
+  public KeycloakInServiceConfig createKeycloakInServiceConfig() {
+    return createConfig(KeycloakInServiceConfig.class);
   }
 }

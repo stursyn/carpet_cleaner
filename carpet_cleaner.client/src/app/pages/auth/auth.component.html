@@ -1,0 +1,16 @@
+<nb-layout class="w-100">
+  <nb-layout-header>
+    <div class="w-100 flex justify-content-center">
+      <h3>{{'carpet-cleaner'|translate}}</h3>
+    </div>
+  </nb-layout-header>
+  <nb-layout-column class="w-auto h-min-content flex justify-content-center">
+    <nb-card>
+      <nb-card-body>
+        <nb-auth-block>
+          <router-outlet></router-outlet>
+        </nb-auth-block>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

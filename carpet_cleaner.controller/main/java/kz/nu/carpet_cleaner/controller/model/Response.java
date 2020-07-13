@@ -25,6 +25,16 @@ public class Response<T> {
     this.status = status;
   }
 
+  public static Response of(int status, Object body) {
+    Response<String> response = new Response<>();
+    response.isOk = false;
+    if (Objects.nonNull(body)) {
+      response.body = body.toString();
+    }
+    response.status = status;
+    return response;
+  }
+
   public static Response error(Object body) {
     Response<String> response = new Response<>();
     response.isOk = false;

@@ -7,6 +7,8 @@ public class MerchantDisplayRecord {
   public String count;
   public String material;
   public String measurement;
+  public String sale;
+  public String extraService;
   public boolean showSize = false;
   public Integer width;
   public Integer height;

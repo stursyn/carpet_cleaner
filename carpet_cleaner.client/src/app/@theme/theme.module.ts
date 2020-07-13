@@ -43,6 +43,7 @@ import {TranslateModule} from "@ngx-translate/core";
 const NB_MODULES = [
   NbLayoutModule,
   NbMenuModule,
+  NbContextMenuModule,
   NbUserModule,
   NbActionsModule,
   NbSearchModule,

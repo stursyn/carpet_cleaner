@@ -1,6 +1,6 @@
 {
   "name": "carpet-cleaner",
-  "version": "5.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -21,7 +21,6 @@
     "@angular/compiler": "^9.0.4",
     "@angular/core": "^9.0.4",
     "@angular/forms": "^9.0.4",
-    "@angular/google-maps": "^9.1.0",
     "@angular/platform-browser": "^9.0.4",
     "@angular/platform-browser-dynamic": "^9.0.4",
     "@angular/router": "^9.0.4",
@@ -51,7 +50,6 @@
     "nebular-icons": "1.1.0",
     "ng2-ckeditor": "^1.2.2",
     "ng2-smart-table": "^1.6.0",
-    "ngx-echarts": "^4.2.2",
     "ngx-mask": "^9.1.2",
     "node-sass": "^4.14.1",
     "normalize.css": "6.0.0",
@@ -65,7 +63,7 @@
     "tslib": "^1.10.0",
     "typeface-exo": "0.0.22",
     "web-animations-js": "^2.3.2",
-    "zone.js": "~0.10.2"
+    "zone.js": "^0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1000.0",

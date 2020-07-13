@@ -1,0 +1,67 @@
+<div class="login-container">
+  <h5 id="title" class="title">{{'login'|translate}}</h5>
+
+  <nb-alert *ngIf="errors?.length>0"
+            outline="danger" role="alert">
+    <p class="alert-title"><b>{{'error'|translate}}</b></p>
+    <ul class="alert-message-list">
+      <li *ngFor="let error of errors" class="alert-message">{{ error|translate }}</li>
+    </ul>
+  </nb-alert>
+
+  <form (ngSubmit)="login()" #form="ngForm" aria-labelledby="title">
+
+    <div class="form-control-group">
+      <label class="label" for="input-email">{{'username'|translate}}:</label>
+      <input nbInput
+             fullWidth
+             [(ngModel)]="user.username"
+             #email="ngModel"
+             name="email"
+             id="input-email"
+             [placeholder]="'username'|translate"
+             autofocus
+             [status]="email.dirty ? (email.invalid  ? 'danger' : 'success') : ''"
+             [required]="getConfigValue('forms.validation.username.required')"
+             [attr.aria-invalid]="email.invalid && email.touched ? true : null">
+      <ng-container *ngIf="email.invalid && email.touched">
+        <p class="error-message" *ngIf="email.errors?.required">
+          {{'field-required'|translate}}
+        </p>
+      </ng-container>
+    </div>
+
+    <div class="form-control-group">
+      <label class="label" for="input-password">{{'password'|translate}}:</label>
+      <input nbInput
+             fullWidth
+             [(ngModel)]="user.password"
+             #password="ngModel"
+             name="password"
+             type="password"
+             id="input-password"
+             placeholder="{{'password'|translate}}"
+             [status]="password.dirty ? (password.invalid  ? 'danger' : 'success') : ''"
+             [required]="getConfigValue('forms.validation.password.required')"
+             [minlength]="getConfigValue('forms.validation.password.minLength')"
+             [maxlength]="getConfigValue('forms.validation.password.maxLength')"
+             [attr.aria-invalid]="password.invalid && password.touched ? true : null">
+      <ng-container *ngIf="password.invalid && password.touched ">
+        <p class="error-message" *ngIf="password.errors?.required">
+          {{'field-required'|translate}}
+        </p>
+        <p class="error-message" *ngIf="password.errors?.minlength || password.errors?.maxlength">
+          {{'password-restriction'| translate:{minLength:getConfigValue('forms.validation.password.minLength'),maxLength:getConfigValue('forms.validation.password.maxLength')} }}
+        </p>
+      </ng-container>
+    </div>
+
+    <button nbButton
+            fullWidth
+            status="success"
+            [disabled]="submitted || !form.valid"
+            [class.btn-pulse]="submitted">
+      {{'enter'|translate}}
+    </button>
+  </form>
+</div>

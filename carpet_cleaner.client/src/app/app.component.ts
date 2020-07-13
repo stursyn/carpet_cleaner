@@ -3,18 +3,20 @@
  * Copyright Akveo. All Rights Reserved.
  * Licensed under the MIT License. See License.txt in the project root for license information.
  */
-import { Component, OnInit } from '@angular/core';
-import { AnalyticsService } from './@core/utils/analytics.service';
-import { SeoService } from './@core/utils/seo.service';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {AnalyticsService} from './@core/utils/analytics.service';
+import {SeoService} from './@core/utils/seo.service';
 import {SessionService} from "./services/session.service";
 import {ApiService} from "./services/api.service";
 import {ApiProd} from "./implementations/api/apiProd";
 import {HttpClient} from "@angular/common/http";
 import {TranslateService} from '@ngx-translate/core';
+import {AuthService} from "./services/auth.service";
 
 @Component({
   selector: 'app',
   template: '<router-outlet></router-outlet>',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
 
@@ -23,6 +25,7 @@ export class AppComponent implements OnInit {
               private translate: TranslateService,
               private session: SessionService,
               private http: HttpClient,
+              private authService: AuthService,
               private apiService: ApiService) {
 
     translate.setDefaultLang('ru');
@@ -33,6 +36,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.analytics.trackPageViews();
     this.seoService.trackCanonicalChanges();
-    this.apiService.api = new ApiProd(this.http)
+    this.apiService.api = new ApiProd(this.http);
   }
 }

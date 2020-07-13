@@ -98,4 +98,9 @@ public class OrderRegisterImpl implements OrderRegister {
   public void cancelOrder(String orderId) {
     orderDao.updateStatus(orderId, OrderStatus.CANCEL);
   }
+
+  @Override
+  public Double getPrice(String service, String type, String material, String measurement) {
+    return orderDao.loadPrice(service, type, material, measurement);
+  }
 }

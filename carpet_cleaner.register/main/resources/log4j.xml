@@ -306,7 +306,7 @@
   </category>
 
   <root>
-    <priority value="INFO"/>
+    <priority value="DEBUG"/>
     <appender-ref ref="SERVER"/>
     <appender-ref ref="CONSOLE"/>
   </root>

@@ -2,39 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46cf8b17-77c0-4b76-9a3c-5d6c728b3bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/AddressRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/CustomerRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/DictRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantToSaveRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/order.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/models/auth-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/models/role.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/auth.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/auth.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/auth.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/auth.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/login/login.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/main-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/exception/KeycloakAuthorizationApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/in_service/AbstractInService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/in_service/KeycloakInService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/in_service/MethodInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/in_service/fake/KeycloakInServiceImplFake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/in_service/impl/KeycloakInServiceImplReal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/AuthRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/AuthUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/KeycloakTokenRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/KeycloakUserInfoRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/AuthRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/in_service_factories/KeycloakInServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/CorsAddFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/KeycloakSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/hotconfig/KeycloakInServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/EmployeeRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/AuthRegisterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___api_null_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___api_null_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_client_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_client_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_controller_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_controller_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_mobile_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___kz_nu_carpet_cleaner___carpet_cleaner_mobile_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/theme.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/theme.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/implementations/api/apiProd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/implementations/api/apiProd.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/auth-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/main.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/main.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/modal/order-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/modal/order-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/modal/order-dialog.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/modal/order-dialog.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/modal/order-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/modal/order-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/model/OrderRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/model/OrderRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/order-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/order.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/order.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/order.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/order.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/AddressRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/AddressRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/CustomerRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/CustomerRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/DictRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/DictRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/MerchantRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/MerchantRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/start_page/start_page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/start_page/start_page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/start_page/start_page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/start_page/start_page.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/start_page/start_page.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/guards/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/error.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/jwt.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/keycloak.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/app/services/order.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/app/services/order.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OperatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OperatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/ApiError.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/ApiError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/DictRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/DictRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/build/classes/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/build/classes/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/build/classes/main/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/build/classes/main/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/AllConfigFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/AllConfigFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/SwaggerAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/DictionaryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/DictionaryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OperatorRegisterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OperatorRegisterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carpet_cleaner.register/main/resources/log4j.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -64,7 +153,17 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="carpet_cleaner@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ExecutionTargetDialog">
@@ -82,12 +181,33 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="carpet_cleaner" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="carpet_cleaner" type="f1a62948:ProjectNode" />
+                <item name="carpet_cleaner" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="carpet_cleaner" type="f1a62948:ProjectNode" />
+                <item name="carpet_cleaner" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="carpet_cleaner" type="f1a62948:ProjectNode" />
+                <item name="carpet_cleaner" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -102,104 +222,92 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.html">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="294">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.spec.ts">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="130" column="3" lean-forward="true" selection-start-line="113" selection-end-line="130" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-375">
+              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.module.ts">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="359">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.ts">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/AuthRegisterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="363">
+              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="39" selection-end-column="30" />
+            <state relative-caret-position="675">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="48" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/package.json">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90" />
+            <state relative-caret-position="558">
+              <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -208,36 +316,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="TypeScript File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>e</find>
-      <find>greetgoUtilVersion</find>
-      <find>greetgo.service_bus</find>
-      <find>&lt;nb-list-item</find>
-      <find>&lt;nb-list-item class=&quot;item&quot;</find>
-      <find>item</find>
-      <find>data</find>
-      <find>ap</find>
-      <find>redirectTo</find>
-      <find>nb-global-spinner</find>
-      <find>spinner</find>
-      <find>nb-install-component</find>
-      <find>redirectTo:</find>
-      <find>label</find>
-      <find>navigate</find>
-      <find>meas</find>
-      <find>ion-avatar</find>
-      <find>loadOrderByStatus</find>
-      <find>let item</find>
-      <find>routeList</find>
-      <find>serviceType</find>
       <find>&quot; +</find>
       <find>&lt;h1&gt;</find>
       <find>h3</find>
@@ -246,6 +333,28 @@
       <find>value</find>
       <find>ngMode</find>
       <find>id</find>
+      <find>ngx-admin-demo</find>
+      <find>alert-message</find>
+      <find>error-message</find>
+      <find>@media</find>
+      <find>auth</find>
+      <find>dofu</find>
+      <find>login</find>
+      <find>Unknown Error</find>
+      <find>dofi</find>
+      <find>keycloakPreAuthActionsFilter</find>
+      <find>send</find>
+      <find>C</find>
+      <find>Loaded Ur</find>
+      <find>user-action</find>
+      <find>NbA</find>
+      <find>user-</find>
+      <find>s</find>
+      <find>logout</find>
+      <find>Loaded URLs from</find>
+      <find>Authentication</find>
+      <find>sendError</find>
+      <find>KeycloakAuthenticationProcessingFilter</find>
     </findStrings>
     <replaceStrings>
       <replace>nu.carpet_cleaner</replace>
@@ -261,57 +370,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java" />
         <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderStatus.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/global.scss" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.page.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/DictRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/DictionaryDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/DictRecord.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/services/order.service.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/MerchantRecord.ts" />
         <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/components.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list-page.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/components/ion-order-list-group/ion-order-list-group.component.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/done-orders/done-orders.page.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/main-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/order-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/action/action-routing.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.scss" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRecord.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantToSaveRecord.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.module.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/EmployeeDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/EmployeeRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/model/Role.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/DictRecord.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.ts" />
-        <option value="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/CrosFilter.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/CrosAddFilter.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/CorsAddFilter.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/guards/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/filter/KeycloakExceptionHandlerFilter.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/RestConfiguration.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/MyKeycloakAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/MyKeycloakAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/components/header/header.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/@theme/theme.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.module.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/keycloak.interceptor.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/ApiError.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/WebConfig.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/error.interceptor.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/KeycloakSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/model/OrderRecord.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.html" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.scss" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.ts" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json" />
+        <option value="$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/AuthRegisterImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console_1.sql" />
       </list>
     </option>
   </component>
@@ -320,8 +429,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="14" />
-    <option name="width" value="960" />
-    <option name="height" value="1082" />
+    <option name="width" value="1151" />
+    <option name="height" value="653" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -329,6 +438,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,82 +448,373 @@
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="operator" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="operator" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina" type="462c0819:PsiDirectoryNode" />
+              <item name="authenticator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina" type="462c0819:PsiDirectoryNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="order-add" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carpet_cleaner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="carpet_cleaner.mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="order-map" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina" type="462c0819:PsiDirectoryNode" />
+              <item name="valves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="coyote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="coyote" type="462c0819:PsiDirectoryNode" />
+              <item name="http11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.16" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.16.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.logging:jboss-logging:3.4.1.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.logging:jboss-logging:3.4.1.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="jboss-logging-3.4.1.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.logging:jboss-logging:3.4.1.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="jboss-logging-3.4.1.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-adapter-core:10.0.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-adapter-core:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-adapter-core-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-adapter-core:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-adapter-core-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-spring-security-adapter:10.0.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-spring-security-adapter:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-spring-security-adapter-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-spring-security-adapter:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-spring-security-adapter-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-spring-security-adapter:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-spring-security-adapter-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-spring-security-adapter:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-spring-security-adapter-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:keycloak-spring-security-adapter:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="keycloak-spring-security-adapter-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:spring-boot-container-bundle:10.0.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:spring-boot-container-bundle:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-container-bundle-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:spring-boot-container-bundle:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-container-bundle-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.keycloak:spring-boot-container-bundle:10.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-container-bundle-10.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-config-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-config-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-config-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-config-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-config-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="builders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-config-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="configurers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="async" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework.security:spring-security-web:5.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework:spring-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework:spring-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework:spring-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework:spring-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.springframework:spring-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="carpet_cleaner" type="b2602c69:ProjectViewProjectNode" />
@@ -435,7 +836,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,41 +846,47 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594408260835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594650669555" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ngx-admin/ngx-admin" />
+    <property name="last_opened_file_path" value="$USER_HOME$/git/service_bus" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/carpet_cleaner.client/node_modules/typescript/lib" />
     <property name="ts.rename.search.for.js.occurrences" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="kz.nu.carpet_cleaner.controller.model" />
-      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
-      <recent name="kz.nu.carpet_cleaner.register.dao" />
-      <recent name="kz.nu.carpet_cleaner.controller.register" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services" />
-      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models" />
-      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail" />
-      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app" />
-      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="kz.nu.carpet_cleaner.controller.controller" />
-      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages" />
       <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages" />
       <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.client/src/app/services" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services" />
+      <recent name="$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kz.nu.carpet_cleaner.register.configurations.beans.all.security" />
+      <recent name="kz.nu.carpet_cleaner.controller.exception" />
+      <recent name="kz.nu.carpet_cleaner.controller.model" />
+      <recent name="kz.nu.carpet_cleaner.register.hotconfig" />
+      <recent name="kz.nu.carpet_cleaner.register.configurations.beans.all.in_service_factories" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kz.nu.carpet_cleaner.register.model" />
+      <recent name="kz.nu.carpet_cleaner.register.dao" />
+      <recent name="kz.nu.carpet_cleaner.controller.register" />
+      <recent name="kz.nu.carpet_cleaner.controller.model" />
+      <recent name="kz.nu.carpet_cleaner.register.register.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,6 +902,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="carpet_cleaner [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kz.nu.carpet_cleaner.register.Application" />
@@ -510,6 +935,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.carpet_cleaner [clean]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -537,7 +967,9 @@
       <workItem from="1594185962400" duration="9101000" />
       <workItem from="1594232362111" duration="734000" />
       <workItem from="1594233610604" duration="16099000" />
-      <workItem from="1594285567443" duration="48646000" />
+      <workItem from="1594285567443" duration="48859000" />
+      <workItem from="1594435615938" duration="89892000" />
+      <workItem from="1594644161913" duration="6825000" />
     </task>
     <task id="LOCAL-00001" summary="copy ngx-admin dashboard and change to ours">
       <created>1593586294108</created>
@@ -644,11 +1076,18 @@
       <option name="project" value="LOCAL" />
       <updated>1594308406121</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add new order by mobile">
+      <created>1594408294292</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594408294292</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223271000" />
+    <option name="totallyTimeSpent" value="320201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,9 +1100,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="14" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74811465" visible="true" weight="0.19370331" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74811465" visible="true" weight="0.19797225" />
       <window_info id="Structure" order="1" sideWeight="0.25188538" side_tool="true" weight="0.19530416" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -673,15 +1111,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43211207" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.25215518" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.25323275" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.7112069" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.42780173" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4994664" weight="0.3297414" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4967983" weight="0.49030173" />
-      <window_info anchor="bottom" id="Docker" order="10" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4967983" weight="0.3125" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.40301725" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50160086" side_tool="true" weight="0.43211207" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3286638" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3297414" />
@@ -695,15 +1133,15 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.32870865" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.22198506" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.18783352" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32977587" />
       <window_info anchor="right" id="Key Promoter X" order="11" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74811465" visible="true" weight="0.19370331" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74811465" visible="true" weight="0.19797225" />
       <window_info id="Structure" order="1" sideWeight="0.25188538" side_tool="true" weight="0.19530416" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -713,30 +1151,30 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43211207" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.25323275" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.25323275" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.7112069" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.42780173" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4994664" weight="0.3297414" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4967983" weight="0.22241087" />
-      <window_info anchor="bottom" id="Docker" order="10" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4967983" visible="true" weight="0.3125" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.40301725" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50160086" side_tool="true" weight="0.43211207" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3286638" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3297414" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.3297414" />
-      <window_info anchor="bottom" id="Database Console" order="17" visible="true" weight="0.40301725" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.40301725" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.32870865" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.22198506" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.18783352" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32977587" />
@@ -772,20 +1210,69 @@
     <MESSAGE value="Добавил gitignore" />
     <MESSAGE value="add order modal window and his functionality" />
     <MESSAGE value="add actions menu navigation and remove examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="add actions menu navigation and remove examples" />
+    <MESSAGE value="add new order by mobile" />
+    <MESSAGE value="add price calculation&#10;add security &#10;add keycloak integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="add price calculation&#10;add security &#10;add keycloak integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html</url>
-          <line>196</line>
+          <url>file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.html</url>
+          <line>202</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/carpet_cleaner.client/src/app/interfaces/iapi.ts</url>
           <line>2</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/auth/login/login.component.ts</url>
+          <line>48</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.4.RELEASE/471a9157eb19b4cbe5881a74a8b8ac621d07f0ad/spring-security-core-5.1.4.RELEASE-sources.jar!/org/springframework/security/core/session/SessionRegistryImpl.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.4.RELEASE/471a9157eb19b4cbe5881a74a8b8ac621d07f0ad/spring-security-core-5.1.4.RELEASE-sources.jar!/org/springframework/security/core/session/SessionRegistryImpl.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.4.RELEASE/471a9157eb19b4cbe5881a74a8b8ac621d07f0ad/spring-security-core-5.1.4.RELEASE-sources.jar!/org/springframework/security/core/session/SessionRegistryImpl.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/CorsAddFilter.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.keycloak/keycloak-spring-security-adapter/10.0.2/df8e1d2bfaa54649788296f4c5059235e6b477c7/keycloak-spring-security-adapter-10.0.2-sources.jar!/org/keycloak/adapters/springsecurity/authentication/KeycloakLogoutHandler.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.4.RELEASE/6ae7ec82249ca3b7b64f204f925a7e01971a4cca/spring-security-web-5.1.4.RELEASE-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.1.4.RELEASE/2868102dfd12fd9a8dc5425d825e82e07eadd131/spring-security-config-5.1.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java</url>
+          <line>255</line>
+          <properties />
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -794,373 +1281,417 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>actions.handledRequest()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.getStatus()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getRequestURI()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.isCommitted()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getContextPath() + loginUri</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>KeycloakCookieBasedRedirect.getRedirectUrlFromCookie(request)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adapterDeploymentContext.resolveDeployment(facade).isBearerOnly()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adapterDeploymentContext.resolveDeployment(facade)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add-routing.module.ts">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/catalina/core/StandardHostValve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="189">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/catalina/valves/ErrorReportValve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/catalina/core/StandardEngineValve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/catalina/connector/CoyoteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="426" selection-start-line="426" selection-end-line="426" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="493" selection-start-line="493" selection-end-line="493" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/coyote/AbstractProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="952" selection-start-line="952" selection-end-line="952" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/tomcat/util/net/NioEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="1441" selection-start-line="1441" selection-end-line="1441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/filter/KeycloakExceptionHandlerFilter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.keycloak/keycloak-adapter-core/10.0.2/7209700a39d7a57108ded4150fbb155ac028d1e4/keycloak-adapter-core-10.0.2-sources.jar!/org/keycloak/adapters/KeycloakDeploymentBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.keycloak/keycloak-spring-security-adapter/10.0.2/df8e1d2bfaa54649788296f4c5059235e6b477c7/keycloak-spring-security-adapter-10.0.2-sources.jar!/org/keycloak/adapters/springsecurity/filter/KeycloakAuthenticationProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.4.RELEASE/6ae7ec82249ca3b7b64f204f925a7e01971a4cca/spring-security-web-5.1.4.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/TaskExecutorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.1.4.RELEASE/2868102dfd12fd9a8dc5425d825e82e07eadd131/spring-security-config-5.1.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="770" column="40" selection-start-line="770" selection-start-column="40" selection-end-line="770" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/implementations/api/apiProd.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/services/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/providers/interceptors/error.interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/CustomerRecord.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/AddressRecord.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/AddressRecord.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/main/order/model/OrderRecord.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRouteWay.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantRecord.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/model/MerchantRecord.ts">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/services/order.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-90">
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/order.service.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/MerchantToSaveRecord.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="197">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.html">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.keycloak/keycloak-spring-security-adapter/10.0.2/df8e1d2bfaa54649788296f4c5059235e6b477c7/keycloak-spring-security-adapter-10.0.2-sources.jar!/org/keycloak/adapters/springsecurity/config/KeycloakWebSecurityConfigurerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2474" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="106">
+          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.1.Final/4d6248596305dc87ac99451b9c234dba37eac15d/jboss-logging-3.4.1.Final-sources.jar!/org/jboss/logging/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="168">
+          <caret line="607" column="16" selection-start-line="607" selection-start-column="16" selection-end-line="607" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/services/interval.service.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/services/operator.service.ts">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.keycloak/keycloak-spring-security-adapter/10.0.2/df8e1d2bfaa54649788296f4c5059235e6b477c7/keycloak-spring-security-adapter-10.0.2-sources.jar!/org/keycloak/adapters/springsecurity/filter/KeycloakAuthenticatedActionsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="35">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/configurations/beans/all/security/KeycloakSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="94" column="28" lean-forward="true" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.keycloak/keycloak-adapter-core/10.0.2/7209700a39d7a57108ded4150fbb155ac028d1e4/keycloak-adapter-core-10.0.2-sources.jar!/org/keycloak/adapters/AuthenticatedActionsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/operator.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/model/MerchantRecord.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/main/order/model/OrderRecord.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="128" column="30" lean-forward="true" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/CustomerRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/OperatorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="195">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/controller/DeliverController.java">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OperatorRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/deliver.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-detail/order-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/node_modules/@angular/forms/forms.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="3318" column="4" selection-start-line="3318" selection-start-column="4" selection-end-line="3318" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/operator.module.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="109" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/@ionic/angular/directives/navigation/ion-tabs.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/main/main.page.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OperatorRegisterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/rxjs/src/internal/ReplaySubject.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-list/order-list.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/services/navigation.service.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/register/OrderRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="40" />
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/ru.json">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="47" selection-end-column="19" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/assets/i18n/kk.json">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/MerchantDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/node_modules/angular8-yandex-maps/lib/models/models.d.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/OrderRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/OrderRecord.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.controller/main/java/kz/nu/carpet_cleaner/controller/model/MerchantDisplayRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/models/DictRecord.ts">
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/resources/liquibase/v001/001_carpet_order.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/OrderRegisterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/pages/operator/order/order.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="225" column="83" selection-start-line="225" selection-start-column="79" selection-end-line="225" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/kk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.register/main/java/kz/nu/carpet_cleaner/register/register/impl/AuthRegisterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/assets/i18n/ru.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.client/src/app/operator/order/order.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="130" column="3" lean-forward="true" selection-start-line="113" selection-end-line="130" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcb0292d-3078-4040-bb9b-c730552b199c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="39" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-add/order-add.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carpet_cleaner.mobile/src/app/pages/order-map/order-map.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>

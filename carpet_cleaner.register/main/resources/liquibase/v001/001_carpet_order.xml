@@ -23,10 +23,17 @@
 
       create table employee (
         id varchar(100) not null primary key,
+        login varchar(100) not null unique,
         name varchar(255),
         surname varchar(255),
-        patronymic varchar(255),
+        role varchar(200),
         deviceId varchar(100)
+      );;
+
+      create table token (
+        token text not null primary key,
+        refreshToken text,
+        employeeId varchar(100) references employee(id)
       );;
 
       create table clean_order (
@@ -38,7 +45,7 @@
         pickUpDate timestamp,
         deliveryDate timestamp,
         cleanStatus varchar(30),
-        totalOrderPrice numeric,
+        totalPrice numeric,
         assignedToPickUp varchar(100) references employee(id),
         assignedToDeliver varchar(100) references employee(id),
         pickedUpBy varchar(100) references employee(id),
@@ -48,7 +55,8 @@
       create table application_dict (
         code varchar(100) not null primary key,
         title varchar(100),
-        dictType varchar(30)
+        dictType varchar(30),
+        value numeric
       );;
 
       create table dict_parent_relation (
@@ -65,9 +73,20 @@
         merchantMaterial varchar(100) references application_dict(code),
         merchantMeasurement varchar(100) references application_dict(code),
         merchantService varchar(100) references application_dict(code),
+        merchantSale varchar(100) references application_dict(code),
+        merchantExtraService varchar(100) references application_dict(code),
         merchantWidth numeric,
         merchantHeight numeric,
         servicePrice numeric
+      );;
+
+      create table price_list (
+        merService varchar(100) references application_dict(code),
+        merType varchar(100) references application_dict(code),
+        merMaterial varchar(100) references application_dict(code),
+        merMeasurement varchar(100) references application_dict(code),
+        price numeric,
+        primary key(merService, merType, merMaterial, merMeasurement)
       );;
 
       create sequence s_order_number increment by 1 start 1;;
@@ -76,27 +95,125 @@
 
   <changeSet author="stursyn" id="fill_dictionary">
     <sql endDelimiter=";;"><![CDATA[
-      insert into employee (id,name,surname,patronymic)
+      insert into application_dict(code, title, dictType, value)
       values
-        ('employee1', 'Seiit', 'Tursyn', 'Nurmuhanbetuly');;
+        ('count1', '1', 'MERCHANT_COUNT', 1),
+        ('count2', '2', 'MERCHANT_COUNT', 2),
+        ('count3', '3', 'MERCHANT_COUNT', 3),
+        ('count4', '4', 'MERCHANT_COUNT', 4),
+        ('count5', '5', 'MERCHANT_COUNT', 5),
+        ('service1', 'Аквачистка', 'MERCHANT_SERVICE', null),
+        ('service2', 'Сухая чистка', 'MERCHANT_SERVICE', null),
+        ('type1', 'Ковер', 'MERCHANT_TYPE', null),
+        ('type2', 'Диван', 'MERCHANT_TYPE', null),
+        ('type3', 'Коврик', 'MERCHANT_TYPE', null),
+        ('type4', 'Одеяло 1 чел', 'MERCHANT_TYPE', null),
+        ('type5', 'Одеяло двойное', 'MERCHANT_TYPE', null),
+        ('material1', 'Шерсть', 'MERCHANT_MATERIAL', null),
+        ('material2', 'Синтетика', 'MERCHANT_MATERIAL', null),
+        ('material3', 'Шелк', 'MERCHANT_MATERIAL', null),
+        ('material4', 'Ковер ручной работы', 'MERCHANT_MATERIAL', null),
+        ('extService1', 'Дезинфекция', 'MERCHANT_EXTRA_SERVICE', 5),
+        ('extService3', 'Срочный заказ', 'MERCHANT_EXTRA_SERVICE', 5),
+        ('extService2', 'Озонирование', 'MERCHANT_EXTRA_SERVICE', 5),
+        ('extService4', 'Удаление запаха мочи', 'MERCHANT_EXTRA_SERVICE', 10),
+        ('sale1', '10%', 'MERCHANT_SALE', 10),
+        ('sale2', '20%', 'MERCHANT_SALE', 20),
+        ('sale3', '30%', 'MERCHANT_SALE', 30),
+        ('measurement1', 'шт', 'MERCHANT_MEASUREMENT', null),
+        ('measurement2', 'Размер', 'MERCHANT_MEASUREMENT', null);;
 
-      insert into application_dict(code, title, dictType)
-      values
-        ('count1', '1', 'MERCHANT_COUNT'),
-        ('count2', '2', 'MERCHANT_COUNT'),
-        ('count3', '3', 'MERCHANT_COUNT'),
-        ('count4', '4', 'MERCHANT_COUNT'),
-        ('count5', '5', 'MERCHANT_COUNT'),
-        ('service1', 'Стирка', 'MERCHANT_SERVICE'),
-        ('service2', 'Химчистка', 'MERCHANT_SERVICE'),
-        ('type1', 'Ковер', 'MERCHANT_TYPE'),
-        ('type2', 'Покрывало', 'MERCHANT_TYPE'),
-        ('type3', 'Коврик', 'MERCHANT_TYPE'),
-        ('material1', 'Шерсть', 'MERCHANT_MATERIAL'),
-        ('material2', 'Синтетика', 'MERCHANT_MATERIAL'),
-        ('measurement1', 'шт', 'MERCHANT_MEASUREMENT'),
-        ('measurement2', 'Размер', 'MERCHANT_MEASUREMENT');;
+       insert into price_list( merService, merType, merMaterial, merMeasurement, price )
+       values
+        ('service1', 'type1', 'material1', 'measurement1', 4000),
+        ('service1', 'type1', 'material1', 'measurement2', 1000),
+        ('service1', 'type1', 'material2', 'measurement1', 3000),
+        ('service1', 'type1', 'material2', 'measurement2', 750),
+        ('service1', 'type1', 'material3', 'measurement1', 2000),
+        ('service1', 'type1', 'material3', 'measurement2', 500),
+        ('service1', 'type1', 'material4', 'measurement1', 1000),
+        ('service1', 'type1', 'material4', 'measurement2', 250),
 
+        ('service1', 'type2', 'material1', 'measurement1', 2*4000),
+        ('service1', 'type2', 'material1', 'measurement2', 2*1000),
+        ('service1', 'type2', 'material2', 'measurement1', 2*3000),
+        ('service1', 'type2', 'material2', 'measurement2', 2*750),
+        ('service1', 'type2', 'material3', 'measurement1', 2*2000),
+        ('service1', 'type2', 'material3', 'measurement2', 2*500),
+        ('service1', 'type2', 'material4', 'measurement1', 2*1000),
+        ('service1', 'type2', 'material4', 'measurement2', 2*250),
+
+        ('service1', 'type3', 'material1', 'measurement1', 3*4000),
+        ('service1', 'type3', 'material1', 'measurement2', 3*1000),
+        ('service1', 'type3', 'material2', 'measurement1', 3*3000),
+        ('service1', 'type3', 'material2', 'measurement2', 3*750),
+        ('service1', 'type3', 'material3', 'measurement1', 3*2000),
+        ('service1', 'type3', 'material3', 'measurement2', 3*500),
+        ('service1', 'type3', 'material4', 'measurement1', 3*1000),
+        ('service1', 'type3', 'material4', 'measurement2', 3*250),
+
+        ('service1', 'type4', 'material1', 'measurement1', 4*4000),
+        ('service1', 'type4', 'material1', 'measurement2', 4*1000),
+        ('service1', 'type4', 'material2', 'measurement1', 4*3000),
+        ('service1', 'type4', 'material2', 'measurement2', 4*750),
+        ('service1', 'type4', 'material3', 'measurement1', 4*2000),
+        ('service1', 'type4', 'material3', 'measurement2', 4*500),
+        ('service1', 'type4', 'material4', 'measurement1', 4*1000),
+        ('service1', 'type4', 'material4', 'measurement2', 4*250),
+
+        ('service1', 'type5', 'material1', 'measurement1', 5*4000),
+        ('service1', 'type5', 'material1', 'measurement2', 5*1000),
+        ('service1', 'type5', 'material2', 'measurement1', 5*3000),
+        ('service1', 'type5', 'material2', 'measurement2', 5*750),
+        ('service1', 'type5', 'material3', 'measurement1', 5*2000),
+        ('service1', 'type5', 'material3', 'measurement2', 5*500),
+        ('service1', 'type5', 'material4', 'measurement1', 5*1000),
+        ('service1', 'type5', 'material4', 'measurement2', 5*250),
+
+        ('service2', 'type1', 'material1', 'measurement1', 400),
+        ('service2', 'type1', 'material1', 'measurement2', 100),
+        ('service2', 'type1', 'material2', 'measurement1', 300),
+        ('service2', 'type1', 'material2', 'measurement2', 75),
+        ('service2', 'type1', 'material3', 'measurement1', 200),
+        ('service2', 'type1', 'material3', 'measurement2', 50),
+        ('service2', 'type1', 'material4', 'measurement1', 100),
+        ('service2', 'type1', 'material4', 'measurement2', 25),
+
+        ('service2', 'type2', 'material1', 'measurement1', 2*400),
+        ('service2', 'type2', 'material1', 'measurement2', 2*100),
+        ('service2', 'type2', 'material2', 'measurement1', 2*300),
+        ('service2', 'type2', 'material2', 'measurement2', 2*75),
+        ('service2', 'type2', 'material3', 'measurement1', 2*200),
+        ('service2', 'type2', 'material3', 'measurement2', 2*50),
+        ('service2', 'type2', 'material4', 'measurement1', 2*100),
+        ('service2', 'type2', 'material4', 'measurement2', 2*25),
+
+        ('service2', 'type3', 'material1', 'measurement1', 3*400),
+        ('service2', 'type3', 'material1', 'measurement2', 3*100),
+        ('service2', 'type3', 'material2', 'measurement1', 3*300),
+        ('service2', 'type3', 'material2', 'measurement2', 3*75),
+        ('service2', 'type3', 'material3', 'measurement1', 3*200),
+        ('service2', 'type3', 'material3', 'measurement2', 3*50),
+        ('service2', 'type3', 'material4', 'measurement1', 3*100),
+        ('service2', 'type3', 'material4', 'measurement2', 3*25),
+
+        ('service2', 'type4', 'material1', 'measurement1', 4*400),
+        ('service2', 'type4', 'material1', 'measurement2', 4*100),
+        ('service2', 'type4', 'material2', 'measurement1', 4*300),
+        ('service2', 'type4', 'material2', 'measurement2', 4*75),
+        ('service2', 'type4', 'material3', 'measurement1', 4*200),
+        ('service2', 'type4', 'material3', 'measurement2', 4*50),
+        ('service2', 'type4', 'material4', 'measurement1', 4*100),
+        ('service2', 'type4', 'material4', 'measurement2', 4*25),
+
+        ('service2', 'type5', 'material1', 'measurement1', 5*400),
+        ('service2', 'type5', 'material1', 'measurement2', 5*100),
+        ('service2', 'type5', 'material2', 'measurement1', 5*300),
+        ('service2', 'type5', 'material2', 'measurement2', 5*75),
+        ('service2', 'type5', 'material3', 'measurement1', 5*200),
+        ('service2', 'type5', 'material3', 'measurement2', 5*50),
+        ('service2', 'type5', 'material4', 'measurement1', 5*100),
+        ('service2', 'type5', 'material4', 'measurement2', 5*25);;
     ]]></sql>
   </changeSet>
 </databaseChangeLog>

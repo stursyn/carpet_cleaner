@@ -1,0 +1,24 @@
+<nb-layout class="w-100">
+
+  <nb-layout-header>
+    <div class="row w-100">
+      <div class="col-sm-9">
+        <div class="header-container">
+          <div class="logo-container">
+            <a class="logo">{{'carpet-cleaner'|translate}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <nb-user [nbContextMenu]="userMenu"
+                 nbContextMenuTag="user-context-menu"
+                 [name]="user.surname + ' ' + user.name">
+        </nb-user>
+      </div>
+    </div>
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>

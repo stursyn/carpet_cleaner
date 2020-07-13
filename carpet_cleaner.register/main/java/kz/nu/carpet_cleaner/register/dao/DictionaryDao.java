@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface DictionaryDao {
 
-  @Select("select code as value, title from application_dict where dictType = #{dictType}")
+  @Select("select code as value, title, value as priceValue from application_dict where dictType = #{dictType}")
   List<DictRecord> loadDictionaryByDictType(@Param("dictType") String dictType);
 
 }

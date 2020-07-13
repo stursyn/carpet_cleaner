@@ -2,6 +2,7 @@ import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {environment} from 'environments/environment';
 import {IApi} from "../../interfaces/iapi";
+import {AuthService} from "../../services/auth.service";
 
 export class ApiProd implements IApi {
 
@@ -26,7 +27,6 @@ export class ApiProd implements IApi {
       }
     }
 
-    // Support easy query params for GET requests
     if (params) {
       defReqOpts.params = new HttpParams();
       for (const k in params) {

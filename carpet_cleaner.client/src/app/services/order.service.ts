@@ -40,4 +40,10 @@ export class OrderService {
     return this.api.get(endPoint).toPromise()
       .then( res=>res);
   }
+
+  loadPrice(param: any) {
+    let endPoint = this.apiPoint + "/price";
+    return this.api.get(endPoint, param).toPromise()
+      .then( res=>res);
+  }
 }
