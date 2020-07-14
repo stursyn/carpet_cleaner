@@ -1,1 +1,1 @@
-nu/carpet-cleaner
+carpet-cleaner-client

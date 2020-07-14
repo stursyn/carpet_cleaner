@@ -8,6 +8,7 @@ import {HttpClient} from "@angular/common/http";
 import {ApiService} from "./services/api.service";
 import {ApiProd} from "./implementations/api/apiProd";
 import {SessionService} from "./services/session.service";
+import {AuthService} from "./services/auth.service";
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,7 @@ export class AppComponent implements OnInit {
     private session: SessionService,
     private http: HttpClient,
     private apiService: ApiService,
-    private menu: MenuController) {
+    private authService: AuthService) {
 
     this.initializeApp();
   }
@@ -46,19 +47,29 @@ export class AppComponent implements OnInit {
           title : 'orders',
           url   : "/main/order-list",
           iconSrc  :  "assets/order.svg",
-          icon : null
+          icon : null,
+          action: null
         },
         {
           title : 'doneOrders',
           url   : "/actions/done-orders",
           iconSrc  :  "assets/order-done.svg",
-          icon : null
+          icon : null,
+          action: null
         },
         {
           title : 'addNewOrder',
           url   : "/actions/order-add",
           iconSrc  :  "assets/order-add.svg",
-          icon : null
+          icon : null,
+          action: null
+        },
+        {
+          title : 'logout',
+          url   : null,
+          iconSrc  : null,
+          icon : "exit",
+          action: 'logout'
         }
       ];
   }
@@ -66,4 +77,14 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.apiService.api = new ApiProd(this.http)
   }
+
+  clickAction(action: any) {
+    switch (action) {
+      case 'logout':
+        this.authService.logout();
+        break;
+    }
+  }
+
+
 }

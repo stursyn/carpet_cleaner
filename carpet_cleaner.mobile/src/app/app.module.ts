@@ -13,6 +13,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS, HttpClient} from "@angular/common/
 import { TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { ErrorInterceptor} from "./providers/interceptors/error.interceptor";
+import {KeycloakInterceptor} from "./providers/interceptors/keycloak.interceptor";
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -45,6 +46,7 @@ const mapKey:IConfig = {
     StatusBar,
     SplashScreen,
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+    { provide: HTTP_INTERCEPTORS, useClass: KeycloakInterceptor, multi: true},
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     { provide: YA_MAP_CONFIG, useValue: mapKey}
   ],

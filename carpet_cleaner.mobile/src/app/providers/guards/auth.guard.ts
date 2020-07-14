@@ -20,6 +20,7 @@ export class AuthGuard implements CanActivate {
     if (currentUser) {
       return true;
     }
+    console.log(currentUser);
 
     let tree: UrlTree = this.router.parseUrl('login');
     tree.queryParams.returnUrl = state.url;

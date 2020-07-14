@@ -14,6 +14,8 @@ import kz.nu.carpet_cleaner.register.model.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
+
 @Component
 public class AuthRegisterImpl implements AuthRegister {
 
@@ -46,7 +48,7 @@ public class AuthRegisterImpl implements AuthRegister {
       ret.surname = keycloakUserInfoRecord.family_name;
       ret.role = employee==null? Role.OPERATOR.name():employee.role.name();
 
-    } catch (JsonProcessingException e) {
+    } catch (IOException e) {
       throw new RuntimeException(e);
     }
     return ret;

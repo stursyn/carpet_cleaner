@@ -11,17 +11,19 @@ buildscript {
     }
 }
 
-
 allprojects {
     apply plugin: 'java'
     apply plugin: 'maven'
     apply plugin: 'idea'
     apply plugin: 'war'
 
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+//    sourceCompatibility = JavaVersion.VERSION_1_8
+//    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
 
     group = "kz.nu.carpet_cleaner"
+    version = '0.0.1'
 
     buildscript {
         repositories {
@@ -41,6 +43,8 @@ allprojects {
 
 subprojects {
     task allDeps(type: DependencyReportTask) {}
+
+    sourceCompatibility = '11'
 
     apply plugin: 'io.spring.dependency-management'
 
@@ -97,5 +101,4 @@ subprojects {
             attributes 'Created-At': new Date().format("yyyy-MM-dd/HH:mm:ss")
         }
     }
-
 }

@@ -5,16 +5,24 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.client.main" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.client.test" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.main" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.test" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.main" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.mobile.main" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.mobile.test" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.main" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.test" target="1.8" />
-      <module name="kz.nu.carpet_cleaner.carpet_cleaner.test" target="1.8" />
+      <module name="kz.greetgo.carpet_cleaner.client.main" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.client.test" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.controller.main" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.controller.test" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.mobile.main" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.mobile.test" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.register.main" target="11" />
+      <module name="kz.greetgo.carpet_cleaner.register.test" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.client.main" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.client.test" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.main" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.test" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.main" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.mobile.main" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.mobile.test" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.main" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.test" target="11" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

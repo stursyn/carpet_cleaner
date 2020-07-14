@@ -2,10 +2,9 @@ version: "2.3"
 
 services:
   carpet-cleaner-client:
-    image: nu/carpet-cleaner:0.0.1
-    restart: always
-    ports:
-      - "9797:80"
+    image: carpet-cleaner-client:0.0.1
     environment:
-      KMF_API_HOST: "carpet-cleaner-server"
-      KMF_API_PORT: "8080"
+      CARPET_CLEANER_API_HOST: "carpet-cleaner"
+      CARPET_CLEANER_API_PORT: "8080"
+    ports:
+      - 9797:80

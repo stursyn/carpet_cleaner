@@ -1,7 +1,6 @@
 package kz.nu.carpet_cleaner.controller.model;
 
 import java.util.Date;
-import lombok.var;
 
 public class ApiError {
 

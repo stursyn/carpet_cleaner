@@ -10,5 +10,5 @@
 
 export const environment = {
   production: false,
-  base: 'http://localhost:8484/api/'
+  base: 'http://192.168.0.105:8484/api/'
 };
