@@ -2,7 +2,6 @@ import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {environment} from 'environments/environment';
 import {IApi} from "../../interfaces/iapi";
-import {AuthService} from "../../services/auth.service";
 
 export class ApiProd implements IApi {
 
