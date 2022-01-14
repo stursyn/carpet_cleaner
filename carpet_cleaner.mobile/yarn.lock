@@ -1047,6 +1047,13 @@
   dependencies:
     "@types/cordova" latest
 
+"@ionic-native/geolocation@^5.27.0":
+  version "5.36.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/geolocation/-/geolocation-5.36.0.tgz#c0ed319a4d6f4d4bcbe3789089aaeb3b02ff49b6"
+  integrity sha512-Fk7YXBn9/dOBGqtySSQgoCg7OLlmS8M6Y1Xa3hjgZBzFU0NPb9nnhVuMWI5Wp2qH/7cuzWRB7kEp4oN2tZ6fbw==
+  dependencies:
+    "@types/cordova" latest
+
 "@ionic-native/splash-screen@^5.0.0":
   version "5.27.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-5.27.0.tgz#d2aa69808e9eff3b4bc79b95c58864a5539a535e"
@@ -1233,10 +1240,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
   integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
 
-"@types/node@^12.11.1":
-  version "12.12.47"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.47.tgz#5007b8866a2f9150de82335ca7e24dd1d59bdfb5"
-  integrity sha512-yzBInQFhdY8kaZmqoL2+3U5dSTMrKaYcb561VU+lDzAYvqt+2lojvBEy+hmpSNuXnPTx7m9+04CzWYOUqWME2A==
+"@types/node@^12.12.48":
+  version "12.20.41"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.41.tgz#81d7734c5257da9f04354bd9084a6ebbdd5198a5"
+  integrity sha512-f6xOqucbDirG7LOzedpvzjP3UTmHttRou3Mosx3vL9wr9AIQGhcPgVnqa8ihpZYnxyM1rxeNCvTyukPKZtq10Q==
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -2000,6 +2007,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@^4.5.0:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.1.tgz#bc25380c2c14192374e8dec07cf01b2742d222a2"
+  integrity sha512-0dj+VgI9Ecom+rvvpNZ4MUZJz8dcX7WCX+eTID9+/8HgOkv3dsRzi8BGeZJCQU6flWQVYxwTQnEZFrmJSEO7og==
 
 bplist-creator@0.0.8:
   version "0.0.8"
@@ -2870,6 +2882,11 @@ cordova-plugin-device@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-device/-/cordova-plugin-device-2.0.3.tgz#c2b41b7efd0455dd097f89356d85bfdd5dadeb0f"
   integrity sha512-Jb3V72btxf3XHpkPQsGdyc8N6tVBYn1vsxSFj43fIz9vonJDUThYPCJJHqk6PX6N4dJw6I4FjxkpfCR4LDYMlw==
+
+cordova-plugin-geolocation@^4.0.2:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-geolocation/-/cordova-plugin-geolocation-4.1.0.tgz#dfea55e212ed1c46e9d82a373e90b45b9887d1f3"
+  integrity sha512-y5io/P10xGMxSn2KEqfv/fExK47eA1pmSonJdmDqDsaSADV9JpgdPx0mUSA08+5pzma/OS9R0LoODeDPx7Jvjg==
 
 cordova-plugin-ionic-keyboard@^2.2.0:
   version "2.2.0"
@@ -4118,9 +4135,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
-  integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
+  version "1.14.7"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
+  integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
 
 for-in@^1.0.2:
   version "1.0.2"
